@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@import "../sass/utilities/mixins";
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body {
+  @include display-flex;
+
+  color: black;
+  background-color: #2a2c3c;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  margin: 50px;
+
+  width: 1000px;
+  height: auto;
+
+  .flex-grow {
+    @include display-flex;
+    gap: 35px;
+    
+    .item {
+      @include display-flex;
+
+      width: 125px;
+      height: 125px;
+      
+      background-color: #b2e5e6;
+
+      border-radius: 30px;
+
+      span {
+        font-size: 20px;
+      }
+    }
+
+    &-1 .item-1 {
+      flex-grow: 1; /////
+    }
+
+    &-2 .item-2 {
+      flex-grow: 1; /////
+    }
+
+    &-3 .item-3 {
+      flex-grow: 1; /////
+    }
+
+    &-4 .item-4 {
+      flex-grow: 1; /////
+    }
+
+    &-5 .item-5 {
+      flex-grow: 1; /////
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@mixin display-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin main-logo {
+    width: 132px;
+    height: 40px;
+
+    svg {
+        background-color: $primary-color;
+    }
+}

@@ -1,0 +1,39 @@
+@import "../sass/utilities/mixins";
+
+
+
+body {
+  @include display-flex;
+
+  height: 100vh;
+
+  background-color: #2a2c3c;
+}
+
+.container {
+  @include display-flex;
+  gap: 12px;
+
+  width: 75vw;
+  height: 50vmin;
+
+  img {
+    flex: 1;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    overflow: hidden;
+
+    filter: grayscale(100%) brightness(75%);
+
+    transition: flex 0.5s, filter 0.5s;
+
+    &:hover {
+      flex: 8;
+
+      filter: grayscale(0%) brightness(115%);
+    }
+  }
+}

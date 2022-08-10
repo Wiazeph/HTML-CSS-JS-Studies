@@ -1,0 +1,520 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  background-image: url(https://wallpapershome.com/images/wallpapers/macos-big-sur-1280x720-dark-wwdc-2020-22655.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.calendar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  width: 1200px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  -webkit-box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+          box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+}
+
+.calendar .left-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 800px;
+  height: 100%;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.calendar .left-bar .month-year {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  height: 100px;
+  border-radius: 25px 0 0 0;
+}
+
+.calendar .left-bar .month-year span {
+  font-size: 32px;
+}
+
+.calendar .left-bar .month-year .arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.calendar .left-bar .month-year .arrow:hover, .calendar .left-bar .month-year .arrow:active {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.calendar .left-bar .month-year .arrow svg {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+
+.calendar .left-bar .weekdays {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: 75px;
+  font-size: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.calendar .left-bar .days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 60px;
+  margin: 45px 0;
+  width: 100%;
+  height: auto;
+}
+
+.calendar .left-bar .days button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: calc(100% / 7);
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-family: inherit;
+  z-index: 5;
+}
+
+.calendar .left-bar .days button span {
+  color: white;
+  font-size: 14px;
+  z-index: 7;
+}
+
+.calendar .left-bar .days button:before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  z-index: 6;
+  cursor: pointer;
+  width: 75px;
+  height: 75px;
+}
+
+.calendar .left-bar .days button:hover:before {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.calendar .left-bar .days .target {
+  position: relative;
+}
+
+.calendar .left-bar .days .target:before {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+}
+
+.calendar .left-bar .days .target:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  z-index: 6;
+  cursor: pointer;
+  top: 25px;
+  width: 6px;
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.calendar .right-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  width: 400px;
+  height: 530px;
+}
+
+.calendar .right-bar .top-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.calendar .right-bar .top-bar .day > span {
+  font-size: 150px;
+  line-height: 150px;
+}
+
+.calendar .right-bar .top-bar .weekday > span {
+  font-size: 32px;
+}
+
+.calendar .right-bar .mid-bar {
+  width: 80%;
+  height: auto;
+}
+
+.calendar .right-bar .mid-bar .current-events {
+  font-size: 25px;
+  text-align: center;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.calendar .right-bar .mid-bar .events {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.calendar .right-bar .mid-bar .events details[open] summary:before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  cursor: default;
+  z-index: 80;
+}
+
+.calendar .right-bar .mid-bar .events details summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: auto;
+  height: 30px;
+  border-radius: 10px;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.calendar .right-bar .mid-bar .events details summary:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.calendar .right-bar .mid-bar .events details summary span {
+  margin: 0 25px;
+  font-size: 15px;
+}
+
+.calendar .right-bar .mid-bar .events details summary span:before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  z-index: 6;
+  top: 12px;
+  left: 10px;
+  width: 5px;
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.calendar .right-bar .mid-bar .events details summary span:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  z-index: 6;
+  top: 12px;
+  right: 10px;
+  width: 5px;
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.calendar .right-bar .mid-bar .events details .event {
+  position: absolute;
+  bottom: -10px;
+  left: 25px;
+  width: 350px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.85);
+  -webkit-box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+          box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  cursor: default;
+  z-index: 99;
+}
+
+.calendar .right-bar .mid-bar .events details .event .event-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  margin: 20px;
+}
+
+.calendar .right-bar .mid-bar .events details .event .event-items .event-items-top-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 10px;
+  width: 100%;
+  height: 18px;
+}
+
+.calendar .right-bar .mid-bar .events details .event .event-items .event-items-top-bar button {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.calendar .right-bar .mid-bar .events details .event .event-items .event-items-top-bar button svg {
+  width: 18px;
+  height: 100%;
+  color: #1d1e22;
+}
+
+.calendar .right-bar .mid-bar .events details .event .event-items .event-items-top-bar .event-items-separator {
+  margin: 0 5px;
+  height: 125%;
+  border-right: 1px solid #1d1e22;
+}
+
+.calendar .right-bar .mid-bar .events details .event .event-items .event-items-bottom-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  height: auto;
+  color: #1d1e22;
+}
+
+.calendar .right-bar .mid-bar .events details .event .event-items .event-items-bottom-bar svg {
+  width: 18px;
+  height: 18px;
+}
+
+.calendar .right-bar .mid-bar .events details .event .event-items .event-items-bottom-bar .event-item-title {
+  font-size: 20px;
+}
+
+.calendar .right-bar .mid-bar .events details .event .event-items .event-items-bottom-bar .event-item-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.calendar .right-bar .mid-bar .events details .event .event-items .event-items-bottom-bar .event-item-location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.calendar .right-bar .mid-bar .events details .event .event-items .event-items-bottom-bar .event-item-location a {
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.calendar .right-bar .mid-bar .events details .event .event-items .event-items-bottom-bar .event-item-location a:link, .calendar .right-bar .mid-bar .events details .event .event-items .event-items-bottom-bar .event-item-location a:visited {
+  color: #1d1e22;
+}
+
+.calendar .right-bar .mid-bar .events details .event .event-items .event-items-bottom-bar .event-item-location a:hover, .calendar .right-bar .mid-bar .events details .event .event-items .event-items-bottom-bar .event-item-location a:active {
+  text-decoration: underline;
+}
+
+.calendar .right-bar .mid-bar .events details .event .event-items .event-items-bottom-bar .event-item-note {
+  font-size: 14px;
+}
+
+.calendar .right-bar .bottom-bar {
+  width: 80%;
+  height: auto;
+}
+
+.calendar .right-bar .bottom-bar button {
+  width: 100%;
+  height: 35px;
+  font-family: inherit;
+  color: white;
+  background-color: transparent;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.calendar .right-bar .bottom-bar button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/*# sourceMappingURL=style.css.map */

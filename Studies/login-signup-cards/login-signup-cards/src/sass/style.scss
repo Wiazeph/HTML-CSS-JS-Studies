@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+@import "../sass/utilities/mixins";
+@import "../sass/utilities/variables";
+@import "../sass/utilities/globals";
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body {
+  @include display-flex;
+
+  height: 100vh;
+
+  color: $primary-color;
+  background-color: #f3f4f6;
+  font-family: "Raleway", sans-serif;
+}
+
+.login-signup-cards {
+  @include display-flex;
+  gap: 150px;
+
+  .login-card {
+    // globals.scss
+
+    .login-card-items {
+      // globals.scss
+
+      .login-tag {
+        // globals.scss
+      }
+
+      .form-items {
+        // globals.scss
+
+        input[type="email"] {
+          @include input-settings;
+        }
+
+        .password-item {
+          @include display-flex;
+          flex-direction: column;
+          gap: 10px;
+
+          width: 100%;
+          height: auto;
+
+          input[type="password"] {
+            @include input-settings;
+          }
+
+          .forgot-password-item a {
+            @include a-tag-settings;
+
+            font-size: 15px;
+            font-weight: $font-weight;
+
+            &:hover,
+            &:active {
+              color: $link-hover-color;
+            }
+          }
+        }
+
+        button[type="button"] {
+          @include button-settings;
+        }
+
+        .create-account-item {
+          // globals.scss
+        }
+      }
+    }
+  }
+
+  .signup-card {
+    // globals.scss
+
+    .signup-card-items {
+      // globals.scss
+
+      .signup-tag {
+        // globals.scss
+      }
+
+      .form-items {
+        // globals.scss
+
+        input[type="email"] {
+          @include input-settings;
+        }
+
+        input[type="password"] {
+          @include input-settings;
+        }
+
+        button[type="button"] {
+          @include button-settings;
+        }
+
+        .have-account-item {
+          // globals.scss
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@mixin display-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin container-row-column {
+    @include display-flex;
+    gap: $container-gap;
+
+    .flex-direction {
+        @include display-flex;
+        gap: 35px;
+
+        .item {
+            @include display-flex;
+
+            width: 125px;
+            height: 125px;
+            
+            background-color: #b2e5e6;
+    
+            border-radius: 30px;
+    
+            span {
+                font-size: 20px;
+            }
+        }
+    }
+}

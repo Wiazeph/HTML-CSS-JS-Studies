@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@import "../sass/utilities/mixins";
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+
+
+body {
+  @include display-flex;
+
+  height: 100vh;
+
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.profile-cards {
+  @include display-flex;
+  flex-wrap: wrap;
+  gap: 50px;
+
+  margin: 30px;
+
+  color: black;
+
+  .card {
+    width: 300px;
+    height: 400px;
+  
+    position: relative;
+  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  
+    overflow: hidden;
+
+    &:hover {
+
+      .card-details, .card-details-social a {
+        transform: none;
+      }
+
+      img {
+        filter: blur(3px);
+      
+        transform: scale(1.2);
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+
+      transition: all 0.3s;
+    }
+
+    .card-details {
+      @include display-flex;
+      flex-direction: column;
+      gap: 15px;
+
+      padding: 20px 10px;
+
+      width: 100%;
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      background-color: white;
+      
+      transform: translateY(100%);
+
+      transition: all 0.3s;
+
+      &-title {
+        font-size: 18px;
+      }
+
+      &-social {
+        @include display-flex;
+
+        ul, ul li a {
+          @include display-flex;
+        }
+
+        ul li {
+          list-style-type: none;
+
+          /* transition: all 0.1s; */
+
+          &:nth-child(1) a {
+            transition-delay: 0.1s;
+          }
+
+          &:nth-child(2) a {
+            transition-delay: 0.2s;
+          }
+
+          &:nth-child(3) a {
+            transition-delay: 0.3s;
+          }
+
+          &:not(:last-child) {
+            margin-right: 15px;
+          }
+
+          /* &:nth-child(1):hover a {
+            background-color: #1da1f2;
+          }
+
+          &:nth-child(2):hover a {
+            background-color: #3f729b;
+          }
+
+          &:nth-child(3):hover a {
+            background-color: #0a66c2;
+          }
+
+          &:hover {
+            transform: scale(1.15);
+
+            a {
+              color: white;
+            }
+          } */
+        }
+
+        ul li a {
+          width: 35px;
+          height: 35px;
+
+          color: #272727;
+          background-color: white;
+
+          border-radius: 50px;
+
+          box-shadow: 0 5px 4px grey;
+
+          cursor: pointer;
+
+          transform: translateY(50px);
+
+          transition: all 0.3s;
+
+          svg {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+}

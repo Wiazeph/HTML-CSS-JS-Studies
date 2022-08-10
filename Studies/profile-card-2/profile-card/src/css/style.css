@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.profile-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 50px;
+  margin: 30px;
+  color: black;
+}
+
+.profile-cards .card {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.profile-cards .card:hover .card-details, .profile-cards .card:hover .card-details-social a {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.profile-cards .card:hover img {
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.profile-cards .card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.profile-cards .card .card-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  padding: 20px 10px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.profile-cards .card .card-details-title {
+  font-size: 18px;
+}
+
+.profile-cards .card .card-details-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile-cards .card .card-details-social ul, .profile-cards .card .card-details-social ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile-cards .card .card-details-social ul li {
+  list-style-type: none;
+  /* transition: all 0.1s; */
+  /* &:nth-child(1):hover a {
+            background-color: #1da1f2;
+          }
+
+          &:nth-child(2):hover a {
+            background-color: #3f729b;
+          }
+
+          &:nth-child(3):hover a {
+            background-color: #0a66c2;
+          }
+
+          &:hover {
+            transform: scale(1.15);
+
+            a {
+              color: white;
+            }
+          } */
+}
+
+.profile-cards .card .card-details-social ul li:nth-child(1) a {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.profile-cards .card .card-details-social ul li:nth-child(2) a {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.profile-cards .card .card-details-social ul li:nth-child(3) a {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.profile-cards .card .card-details-social ul li:not(:last-child) {
+  margin-right: 15px;
+}
+
+.profile-cards .card .card-details-social ul li a {
+  width: 35px;
+  height: 35px;
+  color: #272727;
+  background-color: white;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 5px 4px grey;
+          box-shadow: 0 5px 4px grey;
+  cursor: pointer;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.profile-cards .card .card-details-social ul li a svg {
+  width: 20px;
+  height: 20px;
+}
+/*# sourceMappingURL=style.css.map */

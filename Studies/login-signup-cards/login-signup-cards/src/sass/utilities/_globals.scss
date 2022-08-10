@@ -1,0 +1,58 @@
+.login-card, .signup-card {
+    width: 500px;
+    height: auto;
+  
+    background-color: white;
+  
+    box-shadow: 0 3px 50px 0 rgba(0, 0, 0, 0.2), 0 1px 50px 0 rgba(0, 0, 0, 0.19);
+  
+    border-radius: 45px;
+}
+
+.login-card-items, .signup-card-items {
+    @include display-flex;
+    flex-direction: column;
+    gap: 65px;
+
+    margin: 65px 30px 30px;
+
+    width: auto;
+    height: auto;
+}
+
+.login-tag, .signup-tag {
+    font-size: 45px;
+    font-weight: $font-weight;
+    letter-spacing: $letter-spacing;
+}
+
+.form-items {
+    @include display-flex;
+    flex-direction: column;
+    gap: 30px;
+
+    position: relative;
+
+    width: 100%;
+    height: auto;
+}
+
+.create-account-item, .have-account-item {
+    position: absolute;
+    bottom: 30px;
+
+    a {
+        @include a-tag-settings;
+
+        font-size: 15px;
+
+        span {
+            font-weight: $font-weight;
+        }
+
+        &:hover,
+        &:active {
+            color: $link-hover-color;
+        }
+    }
+}

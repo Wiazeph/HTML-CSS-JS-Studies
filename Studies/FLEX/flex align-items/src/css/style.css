@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: black;
+  background-color: #2a2c3c;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+  margin: 50px;
+  width: 100%;
+  height: auto;
+}
+
+.container .flex-align-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 35px;
+}
+
+.container .flex-align-items .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #b2e5e6;
+  border-radius: 30px;
+}
+
+.container .flex-align-items .item span {
+  font-size: 20px;
+}
+
+.container .flex-align-items .item-1 {
+  width: 150px;
+  height: 150px;
+}
+
+.container .flex-align-items .item-2 {
+  width: 100px;
+  height: 100px;
+}
+
+.container .flex-align-items .item-3 {
+  width: 150px;
+  height: 300px;
+}
+
+.container .flex-align-items .item-4 {
+  width: 225px;
+  height: 225px;
+}
+
+.container .flex-align-items .item-5 {
+  width: 75px;
+  height: 150px;
+}
+
+.container .flex-start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.container .flex-end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.container .center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .baseline {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.container .baseline .item-1 {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.container .baseline .item-1 span {
+  font-size: 35px;
+}
+
+.container .baseline .item-2 {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.container .baseline .item-2 span {
+  font-size: 18px;
+}
+
+.container .baseline .item-3 {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.container .baseline .item-3 span {
+  font-size: 50px;
+}
+
+.container .baseline .item-4 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .baseline .item-4 span {
+  font-size: 75px;
+}
+
+.container .baseline .item-5 {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.container .baseline .item-5 span {
+  font-size: 20px;
+}
+/*# sourceMappingURL=style.css.map */

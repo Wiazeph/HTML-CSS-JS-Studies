@@ -1,0 +1,56 @@
+@mixin display-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin display-flex-align {
+    display: flex;
+    align-items: center;
+}
+
+@mixin display-flex-space-around {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@mixin select-settings {
+    cursor: default;
+    user-select: none;
+}
+
+@mixin width-height {
+    width: 80%;
+    height: auto;
+}
+
+@mixin hover-bg-transition {
+    background-color: $primary-bg-color;
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+
+    transition: all 0.2s ease-in-out;
+}
+
+@mixin button-settings {
+    background-color: transparent;
+
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+@mixin before-after-settings {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    z-index: 6;
+    cursor: pointer;
+}
+
+@mixin event-item-flex-settings {
+    @include display-flex;
+    gap: 10px;
+}

@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.profile-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 50px;
+  margin: 30px;
+}
+
+.profile-cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 700px;
+  height: 350px;
+  position: relative;
+  color: #2d2d2d;
+  background-color: #b2e5e6;
+  letter-spacing: 1px;
+  border: 25px solid #a0cdcf;
+  border-radius: 25px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.profile-cards .card .card-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  width: auto;
+  height: 100%;
+}
+
+.profile-cards .card .card-description .card-description-title {
+  color: black;
+  font-size: 18px;
+}
+
+.profile-cards .card .card-description .card-description-profession {
+  display: block;
+  font-size: 16px;
+}
+
+.profile-cards .card .card-description .card-description-company {
+  display: block;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.profile-cards .card .card-description .card-description-company:hover {
+  text-decoration: underline;
+}
+
+.profile-cards .card .card-description .card-description-social {
+  position: absolute;
+  bottom: 40px;
+}
+
+.profile-cards .card .card-description .card-description-social .card-description-social-follow {
+  display: block;
+  margin-bottom: 8px;
+  color: #555572;
+  font-size: 14px;
+}
+
+.profile-cards .card .card-description .card-description-social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.profile-cards .card .card-description .card-description-social ul li {
+  list-style-type: none;
+}
+
+.profile-cards .card .card-description .card-description-social ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: #121212;
+  border-radius: 50%;
+  -webkit-box-shadow: 6px 6px 12px #97c3c4, -6px -6px 12px #cdffff;
+          box-shadow: 6px 6px 12px #97c3c4, -6px -6px 12px #cdffff;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.profile-cards .card .card-description .card-description-social ul li a:hover {
+  color: white;
+  -webkit-transform: translate(0, -7px);
+          transform: translate(0, -7px);
+}
+
+.profile-cards .card .card-description .card-description-social ul li a svg {
+  width: calc(100% - 15px);
+  height: calc(100% - 15px);
+}
+
+.profile-cards .card .card-description .card-description-social ul li:nth-child(1) a:hover {
+  background-color: #1da1f2;
+}
+
+.profile-cards .card .card-description .card-description-social ul li:nth-child(2) a:hover {
+  background-color: #3f729b;
+}
+
+.profile-cards .card .card-description .card-description-social ul li:nth-child(3) a:hover {
+  background-color: #00405d;
+}
+
+.profile-cards .card .card-description .card-description-social ul li:nth-child(4) a:hover {
+  background-color: #0a66c2;
+}
+
+.profile-cards .card .card-image {
+  width: 250px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=style.css.map */

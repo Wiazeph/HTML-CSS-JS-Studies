@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Glassmorphism Calendar</title>
+
+    <link rel="stylesheet" href="../src/css/style.css">
+
+    <!-- <script>
+        function closeDetails() {
+            document.getElementById("details").open = false;
+        }
+    </script> -->
+
+</head>
+
+<body>
+
+    <div class="calendar">
+
+        <div class="left-bar">
+            
+            <div class="month-year">
+
+                <button class="arrow arrow-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16"><path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/></svg>
+                </button>
+        
+                <span>JUNE 2022</span>
+        
+                <button class="arrow arrow-right">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16"><path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/></svg>
+                </button>
+
+            </div>
+        
+            <div class="weekdays">
+                <div class="monday">MON</div>
+                <div class="tuesday">TUE</div>
+                <div class="wednesday">WED</div>
+                <div class="thursday">THU</div>
+                <div class="friday">FRI</div>
+                <div class="saturday">SAT</div>
+                <div class="sunday">SUN</div>
+            </div>
+        
+            <div class="days">
+                <button><span>30</span></button>
+                <button><span>31</span></button>
+                <button><span>1</span></button>
+                <button><span>2</span></button>
+                <button><span>3</span></button>
+                <button><span>4</span></button>
+                <button><span>5</span></button>
+                <button><span>6</span></button>
+                <button><span>7</span></button>
+                <button><span>8</span></button>
+                <button><span>9</span></button>
+                <button><span>10</span></button>
+                <button><span>11</span></button>
+                <button><span>12</span></button>
+                <button><span>13</span></button>
+                <button><span>14</span></button>
+                <button><span>15</span></button>
+                <button><span>16</span></button>
+                <button><span>17</span></button>
+                <button><span>18</span></button>
+                <button><span>19</span></button>
+                <button><span>20</span></button>
+                <button><span>21</span></button>
+                <button class="target"><span>22</span></button>
+                <button><span>23</span></button>
+                <button><span>24</span></button>
+                <button><span>25</span></button>
+                <button><span>26</span></button>
+                <button><span>27</span></button>
+                <button><span>28</span></button>
+                <button><span>29</span></button>
+                <button><span>30</span></button>
+                <button><span>1</span></button>
+                <button><span>2</span></button>
+                <button><span>3</span></button>
+            </div>
+      
+        </div>
+      
+        <div class="right-bar">
+      
+            <div class="top-bar">
+
+                <div class="day">
+                    <span>22</span>
+                </div>
+                
+                <div class="weekday">
+                    <span>Wednesday</span>
+                </div>
+
+            </div>
+        
+            <div class="mid-bar">
+        
+                <div class="current-events">Current Events</div>
+        
+                <div class="events">
+        
+                    <details id="details">
+
+                        <summary><span>11:45 AM Lunch with Gary</span></summary>
+            
+                        <div class="event event-1">
+                            <div class="event-items">
+
+                                <div class="event-items-top-bar">
+
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16"><path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/></svg>
+                                    </button>
+
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16"><path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/></svg>
+                                    </button>
+
+                                    <div class="event-items-separator"></div>
+
+                                    <button class="close" onclick="closeDetails()">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16"><path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/></svg>
+                                    </button>
+                                    
+                                </div>
+
+                                <div class="event-items-bottom-bar">
+
+                                    <div class="event-item-title">Lunch with Gary</div>
+                                    
+                                    <div class="event-item-time"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-event" viewBox="0 0 16 16"><path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/></svg>Wed, June 22, 2022 - 11:45 AM</div>
+
+                                    <div class="event-item-location"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16"><path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/><path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg><a href="https://goo.gl/maps/i7xJALvYFP9h8X3U9">Verve Coffee Roasters</a></div>
+
+                                    <div class="event-item-note">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, libero? Porro illo necessitatibus architecto tenetur temporibus dignissimos est blanditiis perferendis deleniti minus quaerat dolorem, cumque in fuga! Reprehenderit, enim facere!</div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </details>
+            
+                    <details>
+
+                        <summary><span>18:45 PM Dinner with Tera</span></summary>
+            
+                        <div class="event event-2">
+                            <div class="event-items">
+
+                                <div class="event-items-top-bar">
+
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16"><path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/></svg>
+                                    </button>
+
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16"><path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/></svg>
+                                    </button>
+
+                                    <div class="event-items-separator"></div>
+
+                                    <button class="close" onclick="closeDetails()">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16"><path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/></svg>
+                                    </button>
+
+                                </div>
+                                
+                                <div class="event-items-bottom-bar">
+
+                                    <div class="event-item-title">Dinner with Tera</div>
+                                
+                                    <div class="event-item-time"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-event" viewBox="0 0 16 16"><path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/></svg>Wed, June 22, 2022 - 18:45 PM</div>
+
+                                    <div class="event-item-location"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16"><path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/><path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg><a href="https://goo.gl/maps/KwtgJFqUy4UEj6LD9">Alaska Seafood Restaurant</a></div>
+
+                                    <div class="event-item-note">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, deserunt ea.</div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </details>
+        
+                </div>
+        
+            </div>
+        
+            <div class="bottom-bar">
+                <button class="create-event">Create an Event</button>
+            </div>
+      
+        </div>
+      
+    </div>
+    
+</body>
+
+</html>

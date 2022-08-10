@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+.login-card, .signup-card {
+  width: 500px;
+  height: auto;
+  background-color: white;
+  -webkit-box-shadow: 0 3px 50px 0 rgba(0, 0, 0, 0.2), 0 1px 50px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 3px 50px 0 rgba(0, 0, 0, 0.2), 0 1px 50px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 45px;
+}
+
+.login-card-items, .signup-card-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 65px;
+  margin: 65px 30px 30px;
+  width: auto;
+  height: auto;
+}
+
+.login-tag, .signup-tag {
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 0.85px;
+}
+
+.form-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.create-account-item, .have-account-item {
+  position: absolute;
+  bottom: 30px;
+}
+
+.create-account-item a, .have-account-item a {
+  color: #1d1e22;
+  text-decoration: none;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+  font-size: 15px;
+}
+
+.create-account-item a span, .have-account-item a span {
+  font-weight: 700;
+}
+
+.create-account-item a:hover, .create-account-item a:active, .have-account-item a:hover, .have-account-item a:active {
+  color: #858585;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  color: #1d1e22;
+  background-color: #f3f4f6;
+  font-family: "Raleway", sans-serif;
+}
+
+.login-signup-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 150px;
+}
+
+.login-signup-cards .login-card .login-card-items .form-items input[type="email"] {
+  padding: 5px 20px;
+  width: calc(100% - 125px);
+  height: 40px;
+  background-color: #f3f4f6;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+}
+
+.login-signup-cards .login-card .login-card-items .form-items .password-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.login-signup-cards .login-card .login-card-items .form-items .password-item input[type="password"] {
+  padding: 5px 20px;
+  width: calc(100% - 125px);
+  height: 40px;
+  background-color: #f3f4f6;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+}
+
+.login-signup-cards .login-card .login-card-items .form-items .password-item .forgot-password-item a {
+  color: #1d1e22;
+  text-decoration: none;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.login-signup-cards .login-card .login-card-items .form-items .password-item .forgot-password-item a:hover, .login-signup-cards .login-card .login-card-items .form-items .password-item .forgot-password-item a:active {
+  color: #858585;
+}
+
+.login-signup-cards .login-card .login-card-items .form-items button[type="button"] {
+  position: relative;
+  margin: 30px 0 75px;
+  width: 60%;
+  height: 60px;
+  color: white;
+  background: linear-gradient(-135deg, #1d2b64 0%, #f8cdda 100%);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.85px;
+  -webkit-box-shadow: 0 1px 15px 0 rgba(255, 0, 0, 0.1), 0 -1px 15px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 15px 0 rgba(255, 0, 0, 0.1), 0 -1px 15px 0 rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.login-signup-cards .login-card .login-card-items .form-items button[type="button"]:hover:before {
+  opacity: 1;
+}
+
+.login-signup-cards .login-card .login-card-items .form-items button[type="button"]:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(-135deg, #4a69e2 0%, #ff6c98 100%);
+  border-radius: 25px;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: opacity 0.65s;
+  transition: opacity 0.65s;
+}
+
+.login-signup-cards .signup-card .signup-card-items .form-items input[type="email"] {
+  padding: 5px 20px;
+  width: calc(100% - 125px);
+  height: 40px;
+  background-color: #f3f4f6;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+}
+
+.login-signup-cards .signup-card .signup-card-items .form-items input[type="password"] {
+  padding: 5px 20px;
+  width: calc(100% - 125px);
+  height: 40px;
+  background-color: #f3f4f6;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+}
+
+.login-signup-cards .signup-card .signup-card-items .form-items button[type="button"] {
+  position: relative;
+  margin: 30px 0 75px;
+  width: 60%;
+  height: 60px;
+  color: white;
+  background: linear-gradient(-135deg, #1d2b64 0%, #f8cdda 100%);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.85px;
+  -webkit-box-shadow: 0 1px 15px 0 rgba(255, 0, 0, 0.1), 0 -1px 15px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 15px 0 rgba(255, 0, 0, 0.1), 0 -1px 15px 0 rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.login-signup-cards .signup-card .signup-card-items .form-items button[type="button"]:hover:before {
+  opacity: 1;
+}
+
+.login-signup-cards .signup-card .signup-card-items .form-items button[type="button"]:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(-135deg, #4a69e2 0%, #ff6c98 100%);
+  border-radius: 25px;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: opacity 0.65s;
+  transition: opacity 0.65s;
+}
+/*# sourceMappingURL=style.css.map */

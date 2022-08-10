@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@import "../sass/utilities/mixins";
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+
+
+body {
+  @include display-flex;
+
+  height: 100vh;
+
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.profile-cards {
+  @include display-flex;
+  flex-wrap: wrap;
+  gap: 50px;
+
+  margin: 30px;
+
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 700px;
+    height: 350px;
+
+    position: relative;
+
+    color: #2d2d2d;
+    background-color: #b2e5e6;
+    letter-spacing: 1px;
+
+    border: 25px solid #a0cdcf;
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+    .card-description {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      padding: 40px;
+
+      width: auto;
+      height: 100%;
+
+      .card-description-title {
+        color: black;
+
+        font-size: 18px;
+      }
+
+      .card-description-profession {
+        display: block;
+
+        font-size: 16px;
+      }
+
+      .card-description-company {
+        display: block;
+
+        font-size: 14px;
+
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .card-description-social {
+        position: absolute;
+        bottom: 40px;
+
+        .card-description-social-follow {
+          display: block;
+
+          margin-bottom: 8px;
+
+          color: #555572;
+          font-size: 14px;
+        }
+
+        ul {
+          @include display-flex;
+          gap: 10px;
+
+          li {
+            list-style-type: none;
+
+            a {
+              @include display-flex;
+
+              width: 40px;
+              height: 40px;
+
+              color: #121212;
+
+              border-radius: 50%;
+
+              box-shadow: 6px 6px 12px #97c3c4, -6px -6px 12px #cdffff;
+
+              transition: all 0.4s;
+
+              &:hover {
+                color: white;
+
+                transform: translate(0, -7px);
+              }
+
+              svg {
+                width: calc(100% - 15px);
+                height: calc(100% - 15px);
+              }
+            }
+          }
+
+          li:nth-child(1) {
+            a {
+              &:hover {
+                background-color: #1da1f2;
+              }
+            }
+          }
+
+          li:nth-child(2) {
+            a {
+              &:hover {
+                background-color: #3f729b;
+              }
+            }
+          }
+
+          li:nth-child(3) {
+            a {
+              &:hover {
+                background-color: #00405d;
+              }
+            }
+          }
+
+          li:nth-child(4) {
+            a {
+              &:hover {
+                background-color: #0a66c2;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .card-image {
+      width: 250px;
+      height: 100%;
+
+      object-fit: cover;
+    }
+  }
+}

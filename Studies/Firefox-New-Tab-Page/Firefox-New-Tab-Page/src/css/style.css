@@ -1,0 +1,588 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #865b95;
+  font-family: "Rubik", sans-serif;
+}
+
+body svg {
+  color: white;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 46px;
+  margin: 3.35% 0 0;
+  width: 996px;
+  height: auto;
+}
+
+main .personalize-settings-menu {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+}
+
+main .personalize-settings-menu:hover {
+  background-color: rgba(251, 251, 254, 0.057);
+}
+
+main .personalize-settings-menu details {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+main .personalize-settings-menu details[open] .personalize-settings {
+  -webkit-transform: translateX(-386px);
+          transform: translateX(-386px);
+}
+
+main .personalize-settings-menu details[open] summary:before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  cursor: default;
+  z-index: 80;
+}
+
+main .personalize-settings-menu details summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 100%;
+  height: 100%;
+}
+
+main .personalize-settings-menu details summary svg {
+  width: 18px;
+  height: 18px;
+  color: #fbfbfe;
+}
+
+main .personalize-settings-menu details .personalize-settings {
+  position: fixed;
+  top: 0;
+  width: 432px;
+  height: 100vh;
+  background-color: #42414d;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.22), 0 0 0 1px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.22), 0 0 0 1px rgba(0, 0, 0, 0.12);
+  cursor: default;
+  z-index: 99;
+  -webkit-transition: all 0.25s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+  transition: all 0.25s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+}
+
+main .personalize-settings-menu details .personalize-settings .personalize-settings-menu-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 16px;
+}
+
+main .personalize-settings-menu details .personalize-settings .personalize-settings-menu-items div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .personalize-settings-menu details .personalize-settings .personalize-settings-menu-items .personalize-items-close {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 28px;
+}
+
+main .personalize-settings-menu details .personalize-settings .personalize-settings-menu-items .personalize-items-close button {
+  width: 55px;
+  height: 33px;
+  color: #fbfbfe;
+  background-color: #575563;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.40px;
+  border: none;
+  border-radius: 4px;
+}
+
+main .personalize-settings-menu details .personalize-settings .personalize-settings-menu-items .personalize-items-close button:hover {
+  background-color: #646172;
+}
+
+main .personalize-settings-menu details .personalize-settings .personalize-settings-menu-items .personalize-items-shortcuts {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 0 16px;
+}
+
+main .personalize-settings-menu details .personalize-settings .personalize-settings-menu-items .personalize-items-shortcuts span {
+  color: #fbfbfe;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+main .personalize-settings-menu details .personalize-settings .personalize-settings-menu-items .personalize-items-shortcuts .toggle {
+  position: relative;
+}
+
+main .personalize-settings-menu details .personalize-settings .personalize-settings-menu-items .personalize-items-shortcuts .toggle #toggle-input {
+  display: block;
+  -webkit-appearance: none;
+  width: 26px;
+  height: 16px;
+  background-color: #575563;
+  border-radius: 100px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+main .personalize-settings-menu details .personalize-settings .personalize-settings-menu-items .personalize-items-shortcuts .toggle #toggle-input:checked {
+  background-color: #00ddff;
+}
+
+main .personalize-settings-menu details .personalize-settings .personalize-settings-menu-items .personalize-items-shortcuts .toggle #toggle-input:checked ~ .toggle-circle {
+  background-color: black;
+  -webkit-transform: translate(12px, -50%);
+          transform: translate(12px, -50%);
+}
+
+main .personalize-settings-menu details .personalize-settings .personalize-settings-menu-items .personalize-items-shortcuts .toggle .toggle-circle {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+main .personalize-settings-menu details .personalize-settings .personalize-settings-menu-items .personalize-items-s-or-v {
+  padding: 0 16px;
+}
+
+main .personalize-settings-menu details .personalize-settings .personalize-settings-menu-items .personalize-items-s-or-v span {
+  color: #fbfbfe;
+  font-size: 14px;
+}
+
+main .personalize-settings-menu details .personalize-settings .personalize-settings-menu-items .personalize-settings-menu-separator {
+  margin: 30px 0;
+  width: 100%;
+  border-bottom: 1px solid #b968d6;
+}
+
+main .logo-and-wordmark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: auto;
+  height: 84px;
+}
+
+main .logo-and-wordmark svg:nth-child(1) {
+  width: 84px;
+  height: auto;
+}
+
+main .logo-and-wordmark svg:nth-child(2) {
+  width: 145px;
+  height: auto;
+  margin-left: 8px;
+}
+
+main .search-bar-item .search-bar {
+  position: relative;
+  margin: 0 auto;
+}
+
+main .search-bar-item .search-bar svg {
+  position: absolute;
+  top: 14px;
+  right: 0;
+  bottom: 0;
+  left: 16px;
+  width: 24px;
+  height: 24px;
+}
+
+main .search-bar-item .search-bar input {
+  -webkit-padding-start: 52px;
+          padding-inline-start: 52px;
+  -webkit-padding-end: 10px;
+          padding-inline-end: 10px;
+  padding-block: 0;
+  width: 655px;
+  height: 50px;
+  color: #fbfbfe;
+  background-color: #42414d;
+  font-size: 14px;
+  letter-spacing: 0.15px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+main .search-bar-item .search-bar input:focus, main .search-bar-item .search-bar input:active {
+  -webkit-box-shadow: 0 0 0 2px rgba(0, 221, 255, 0.25);
+          box-shadow: 0 0 0 2px rgba(0, 221, 255, 0.25);
+  outline: 1px solid #00ddff;
+}
+
+main .search-bar-item .search-bar input:not(:placeholder-shown) {
+  font-size: 17px;
+}
+
+main .card-blocks {
+  margin: 0 auto;
+}
+
+main .card-blocks .card-lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style-type: none;
+}
+
+main .card-blocks .card-lists .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  width: 120px;
+  height: 143px;
+  border-radius: 8px;
+  -webkit-transition: -webkit-transform 0.18s ease-in-out;
+  transition: -webkit-transform 0.18s ease-in-out;
+  transition: transform 0.18s ease-in-out;
+  transition: transform 0.18s ease-in-out, -webkit-transform 0.18s ease-in-out;
+}
+
+main .card-blocks .card-lists .card:hover {
+  background-color: rgba(251, 251, 254, 0.057);
+}
+
+main .card-blocks .card-lists .card:hover .card-informations .card-settings-menu {
+  opacity: 1;
+}
+
+main .card-blocks .card-lists .card .card-informations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 16px 0;
+  width: 100%;
+  height: 119px;
+}
+
+main .card-blocks .card-lists .card .card-informations a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+main .card-blocks .card-lists .card .card-informations a .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80px;
+  height: 80px;
+  background-color: #42414d;
+  border-radius: 8px;
+}
+
+main .card-blocks .card-lists .card .card-informations a .icon svg {
+  width: 48px;
+  height: 48px;
+}
+
+main .card-blocks .card-lists .card .card-informations a .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 13px;
+  width: 100%;
+  height: 20px;
+  color: #fbfbfe;
+  font-size: 13px;
+}
+
+main .card-blocks .card-lists .card .card-informations .card-settings-menu {
+  position: absolute;
+  top: 2px;
+  right: 9px;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+main .card-blocks .card-lists .card .card-informations .card-settings-menu details {
+  position: relative;
+}
+
+main .card-blocks .card-lists .card .card-informations .card-settings-menu details[open] svg {
+  color: #00ddff;
+}
+
+main .card-blocks .card-lists .card .card-informations .card-settings-menu details[open] summary:before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  cursor: default;
+  z-index: 80;
+}
+
+main .card-blocks .card-lists .card .card-informations .card-settings-menu details summary {
+  list-style-type: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+main .card-blocks .card-lists .card .card-informations .card-settings-menu details summary svg {
+  width: 19px;
+  height: 19px;
+  color: #fbfbfe;
+  cursor: pointer;
+}
+
+main .card-blocks .card-lists .card .card-informations .card-settings-menu details summary svg:active, main .card-blocks .card-lists .card .card-informations .card-settings-menu details summary svg:focus {
+  color: #00ddff;
+}
+
+main .card-blocks .card-lists .card .card-informations .card-settings-menu details .settings-menu {
+  position: absolute;
+  top: 19px;
+  left: 19px;
+  width: 230px;
+  height: auto;
+  background-color: #42414d;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  z-index: 99;
+}
+
+main .card-blocks .card-lists .card .card-informations .card-settings-menu details .settings-menu .settings-menu-list {
+  margin: 5px 0;
+  list-style-type: none;
+}
+
+main .card-blocks .card-lists .card .card-informations .card-settings-menu details .settings-menu .settings-menu-list .settings-menu-item {
+  width: 100%;
+  height: auto;
+  cursor: default;
+}
+
+main .card-blocks .card-lists .card .card-informations .card-settings-menu details .settings-menu .settings-menu-list .settings-menu-item:hover, main .card-blocks .card-lists .card .card-informations .card-settings-menu details .settings-menu .settings-menu-list .settings-menu-item:active {
+  background-color: rgba(251, 251, 254, 0.15);
+}
+
+main .card-blocks .card-lists .card .card-informations .card-settings-menu details .settings-menu .settings-menu-list .settings-menu-item button {
+  padding: 3px 12px;
+  width: 100%;
+  height: auto;
+  color: white;
+  background-color: transparent;
+  font-size: 14px;
+  text-align: left;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+main .card-blocks .card-lists .card .card-informations .card-settings-menu details .settings-menu .settings-menu-list .settings-menu-separator {
+  margin: 5px 0;
+  width: 100%;
+  border-bottom: 1px solid #b968d6;
+}
+
+@media only screen and (max-width: 959px) and (min-width: 840px) {
+  main .search-bar-item .search-bar input {
+    width: 535px;
+  }
+}
+
+@media only screen and (max-width: 839px) and (min-width: 720px) {
+  main {
+    margin: 30px 0;
+  }
+  main .search-bar-item .search-bar input {
+    width: 415px;
+  }
+}
+
+@media only screen and (max-width: 719px) and (min-width: 480px) {
+  main {
+    margin: 30px 0;
+  }
+  main .search-bar-item .search-bar input {
+    width: 377px;
+  }
+}
+
+@media only screen and (max-width: 479px) and (min-width: 360px) {
+  main {
+    gap: 35px;
+    margin: 30px 0;
+  }
+  main .personalize-settings-menu details[open] .personalize-settings {
+    -webkit-transform: translateX(-314px);
+            transform: translateX(-314px);
+  }
+  main .personalize-settings-menu details .personalize-settings {
+    width: 360px;
+  }
+  main .logo-and-wordmark {
+    height: 64px;
+  }
+  main .logo-and-wordmark svg:nth-child(1) {
+    width: 64px;
+  }
+  main .logo-and-wordmark svg:nth-child(2) {
+    width: 100px;
+  }
+  main .search-bar-item .search-bar svg {
+    top: 13px;
+    left: 12px;
+    width: 22px;
+    height: 22px;
+  }
+  main .search-bar-item .search-bar input {
+    -webkit-padding-start: 45px;
+            padding-inline-start: 45px;
+    -webkit-padding-end: 5px;
+            padding-inline-end: 5px;
+    width: 268px;
+    height: 46px;
+    font-size: 12px;
+  }
+  main .search-bar-item .search-bar input:not(:placeholder-shown) {
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

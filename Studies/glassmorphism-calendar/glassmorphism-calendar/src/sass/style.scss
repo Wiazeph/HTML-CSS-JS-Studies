@@ -1,0 +1,410 @@
+@import "../sass/utilities/mixins";
+@import "../sass/utilities/variables";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body {
+  @include display-flex;
+
+  height: 100vh;
+
+  color: white;
+  font-family: "Poppins", sans-serif;
+
+  background-image: url(https://wallpapershome.com/images/wallpapers/macos-big-sur-1280x720-dark-wwdc-2020-22655.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.calendar {
+  @include display-flex;
+
+  position: relative;
+
+  width: 1200px;
+  height: auto;
+
+  background-color: $primary-bg-color;
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+
+  border-radius: 25px;
+
+  .left-bar {
+    @include display-flex;
+    flex-direction: column;
+
+    width: 800px;
+    height: 100%;
+
+    border-right: $border-line-settings;
+
+    @include select-settings;
+
+    .month-year {
+      @include display-flex-align;
+      justify-content: space-evenly;
+
+      width: 100%;
+      height: 100px;
+
+      border-radius: 25px 0 0 0;
+
+      span {
+        font-size: 32px;
+      }
+
+      .arrow {
+        @include display-flex;
+
+        width: 50px;
+        height: 50px;
+
+        @include button-settings;
+
+        &:hover,
+        &:active {
+          @include hover-bg-transition;
+        }
+
+        svg {
+          width: 24px;
+          height: 24px;
+
+          color: white;
+        }
+      }
+    }
+
+    .weekdays {
+      @include display-flex-space-around;
+
+      width: 100%;
+      height: 75px;
+
+      font-size: 20px;
+
+      border-top: $border-line-settings;
+      border-bottom: $border-line-settings;
+    }
+
+    .days {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 60px;
+
+      margin: 45px 0;
+
+      width: 100%;
+      height: auto;
+
+      button {
+        @include display-flex-space-around;
+
+        width: calc(100% / 7);
+
+        @include button-settings;
+
+        font-family: inherit;
+
+        z-index: 5;
+
+        span {
+          color: white;
+          font-size: 14px;
+
+          z-index: 7;
+        }
+
+        &:before {
+          @include before-after-settings;
+
+          width: 75px;
+          height: 75px;
+        }
+
+        &:hover:before {
+          @include hover-bg-transition;
+        }
+      }
+
+      .target {
+        position: relative;
+
+        &:before {
+          background-color: $primary-bg-color;
+          backdrop-filter: blur(4.5px);
+          -webkit-backdrop-filter: blur(4.5px);
+        }
+
+        &:after {
+          @include before-after-settings;
+
+          top: 25px;
+
+          width: 6px;
+          height: 6px;
+
+          background-color: $dot;
+        }
+      }
+    }
+  }
+
+  .right-bar {
+    @include display-flex-align;
+    justify-content: space-between;
+    flex-direction: column;
+
+    position: relative;
+
+    width: 400px;
+    height: 530px;
+
+    .top-bar {
+      @include display-flex;
+      flex-direction: column;
+
+      @include select-settings;
+
+      .day > span {
+        font-size: 150px;
+        line-height: 150px;
+      }
+
+      .weekday > span {
+        font-size: 32px;
+      }
+    }
+
+    .mid-bar {
+      @include width-height;
+
+      .current-events {
+        font-size: 25px;
+        text-align: center;
+
+        @include select-settings;
+      }
+
+      .events {
+        @include display-flex-align;
+        flex-direction: column;
+        gap: 10px;
+
+        margin-top: 20px;
+
+        details {
+          &[open] {
+            summary:before {
+              content: "";
+              display: block;
+              position: fixed;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              background-color: transparent;
+              cursor: default;
+              z-index: 80;
+            }
+          }
+
+          summary {
+            @include display-flex-align;
+
+            position: relative;
+
+            width: auto;
+            height: 30px;
+
+            border-radius: 10px;
+
+            list-style-type: none;
+
+            cursor: pointer;
+
+            &:hover {
+              @include hover-bg-transition;
+            }
+
+            span {
+              margin: 0 25px;
+
+              font-size: 15px;
+
+              &:before {
+                content: "";
+                position: absolute;
+                border-radius: 50%;
+                z-index: 6;
+
+                top: 12px;
+                left: 10px;
+
+                width: 5px;
+                height: 5px;
+
+                background-color: $dot;
+              }
+
+              &:after {
+                content: "";
+                position: absolute;
+                border-radius: 50%;
+                z-index: 6;
+
+                top: 12px;
+                right: 10px;
+
+                width: 5px;
+                height: 5px;
+
+                background-color: $dot;
+              }
+            }
+          }
+
+          .event {
+            position: absolute;
+            bottom: -10px;
+            left: 25px;
+
+            width: 350px;
+            height: auto;
+
+            background-color: rgba(255, 255, 255, 0.85);
+
+            box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+
+            border-radius: 10px;
+
+            cursor: default;
+
+            z-index: 99;
+
+            .event-items {
+              @include display-flex;
+              flex-direction: column;
+              gap: 20px;
+
+              margin: 20px;
+
+              .event-items-top-bar {
+                @include display-flex-align;
+                justify-content: flex-end;
+                gap: 10px;
+
+                width: 100%;
+                height: 18px;
+
+                button {
+                  @include button-settings;
+
+                  svg {
+                    width: 18px;
+                    height: 100%;
+
+                    color: #1d1e22;
+                  }
+                }
+
+                .event-items-separator {
+                  margin: 0 5px;
+
+                  height: 125%;
+
+                  border-right: 1px solid #1d1e22;
+                }
+              }
+
+              .event-items-bottom-bar {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                flex-direction: column;
+                gap: 20px;
+
+                width: 100%;
+                height: auto;
+
+                color: #1d1e22;
+
+                svg {
+                  width: 18px;
+                  height: 18px;
+                }
+
+                .event-item-title {
+                  font-size: 20px;
+                }
+
+                .event-item-time {
+                  @include event-item-flex-settings;
+
+                  font-size: 14px;
+                }
+
+                .event-item-location {
+                  @include event-item-flex-settings;
+
+                  a {
+                    font-size: 14px;
+                    text-decoration: none;
+
+                    &:link,
+                    &:visited {
+                      color: #1d1e22;
+                    }
+
+                    &:hover,
+                    &:active {
+                      text-decoration: underline;
+                    }
+                  }
+                }
+
+                .event-item-note {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .bottom-bar {
+      @include width-height;
+
+      button {
+        width: 100%;
+        height: 35px;
+
+        font-family: inherit;
+        color: white;
+        background-color: transparent;
+        font-size: 16px;
+
+        border: none;
+        border-radius: 10px;
+
+        cursor: pointer;
+
+        &:hover {
+          @include hover-bg-transition;
+        }
+      }
+    }
+  }
+}

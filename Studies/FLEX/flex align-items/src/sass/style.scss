@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@import "../sass/utilities/mixins";
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body {
+  @include display-flex;
+
+  color: black;
+  background-color: #2a2c3c;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  margin: 50px;
+
+  width: 100%;
+  height: auto;
+
+  .flex-align-items {
+    @include display-flex-justify;
+    
+    .item {
+      @include display-flex;
+      
+      background-color: #b2e5e6;
+
+      border-radius: 30px;
+
+      span {
+        font-size: 20px;
+      }
+
+      &-1 {
+        width: 150px;
+        height: 150px;
+      }
+
+      &-2 {
+        width: 100px;
+        height: 100px;
+      }
+
+      &-3 {
+        width: 150px;
+        height: 300px;
+      }
+
+      &-4 {
+        width: 225px;
+        height: 225px;
+      }
+
+      &-5 {
+        width: 75px;
+        height: 150px;
+      }
+    }
+  }
+
+  .flex-start {
+    align-items: flex-start; /////
+  }
+
+  .flex-end {
+    align-items: flex-end; /////
+  }
+
+  .center {
+    align-items: center; /////
+  }
+
+  .baseline {
+    align-items: baseline; /////
+
+    .item {
+
+      &-1 {
+        align-items: flex-start;
+
+        span {
+          font-size: 35px;
+        }
+      }
+
+      &-2 {
+        align-items: flex-end;
+
+        span {
+          font-size: 18px;
+        }
+      }
+
+      &-3 {
+        align-items: flex-start;
+
+        span {
+          font-size: 50px;
+        }
+      }
+
+      &-4 {
+        align-items: center;
+
+        span {
+          font-size: 75px;
+        }
+      }
+
+      &-5 {
+        align-items: flex-start;
+
+        span {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
