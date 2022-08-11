@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #2a2c3c;
+  font-family: "Poppins", sans-serif;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+}
+.cards .list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.cards .list li {
+  padding: 12px 25px;
+  color: black;
+  border-radius: 50px;
+  list-style-type: none;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.cards .list li:nth-child(1) {
+  background-color: #9d4edd;
+}
+.cards .list li:nth-child(1):hover {
+  box-shadow: 0 0 5px #d8b4e2;
+}
+.cards .list li:nth-child(2) {
+  background-color: #33dfd6;
+}
+.cards .list li:nth-child(2):hover {
+  box-shadow: 0 0 5px #b8f2e6;
+}
+.cards .list li:nth-child(3) {
+  background-color: #f1c0e8;
+}
+.cards .list li:nth-child(3):hover {
+  box-shadow: 0 0 5px #fff9ec;
+}
+.cards .list li:nth-child(4) {
+  background-color: #7177cf;
+}
+.cards .list li:nth-child(4):hover {
+  box-shadow: 0 0 5px #6583a8;
+}
+.cards .list li:nth-child(5) {
+  background-color: #ffe5d9;
+}
+.cards .list li:nth-child(5):hover {
+  box-shadow: 0 0 5px #fefae0;
+}
+.cards .list li:nth-child(6) {
+  background-color: #ffa6c1;
+}
+.cards .list li:nth-child(6):hover {
+  box-shadow: 0 0 5px #ffc8dd;
+}
+.cards .list li:nth-child(7) {
+  background-color: #ffef82;
+}
+.cards .list li:nth-child(7):hover {
+  box-shadow: 0 0 5px #c7f9cc;
+}/*# sourceMappingURL=style.css.map */
