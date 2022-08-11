@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #2a2c3c;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  width: 1200px;
+}
+.container .cursor {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #b2e5e6;
+}
+.container .cursor-1 {
+  cursor: default;
+}
+.container .cursor-2 {
+  cursor: url(https://picsum.photos/id/2/75/75), auto;
+}
+.container .cursor-3 {
+  cursor: all-scroll;
+}
+.container .cursor-4 {
+  cursor: col-resize;
+}
+.container .cursor-5 {
+  cursor: crosshair;
+}
+.container .cursor-6 {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.container .cursor-7 {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+.container .cursor-8 {
+  cursor: pointer;
+}
+.container .cursor-9 {
+  cursor: help;
+}
+.container .cursor-10 {
+  cursor: move;
+}
+.container .cursor-11 {
+  cursor: not-allowed;
+}
+.container .cursor-12 {
+  cursor: progress;
+}
+.container .cursor-13 {
+  cursor: text;
+}
+.container .cursor-14 {
+  cursor: vertical-text;
+}
+.container .cursor-15 {
+  cursor: zoom-in;
+}
+.container .cursor-16 {
+  cursor: zoom-out;
+}/*# sourceMappingURL=style.css.map */

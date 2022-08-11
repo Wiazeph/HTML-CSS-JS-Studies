@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@import "../sass/utilities/mixins";
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+
+
+body {
+  @include display-flex;
+
+  height: 100vh;
+
+  background-color: #2a2c3c;
+}
+
+.container {
+  @include display-flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  
+  width: 1200px;
+  
+  .cursor {
+    width: 100px;
+    height: 100px;
+    
+    border-radius: 50%;
+    
+    background-color: #b2e5e6;
+    
+    &-1 {
+      cursor: default;
+    }
+    
+    &-2 {
+      cursor: url(https://picsum.photos/id/2/75/75), auto;
+    }
+    
+    &-3 {
+      cursor: all-scroll;
+    }
+    
+    &-4 {
+      cursor: col-resize;
+    }
+    
+    &-5 {
+      cursor: crosshair;
+    }
+    
+    &-6 {
+      cursor: grab;
+    }
+    
+    &-7 {
+      cursor: grabbing;
+    }
+    
+    &-8 {
+      cursor: pointer;
+    }
+    
+    &-9 {
+      cursor: help;
+    }
+    
+    &-10 {
+      cursor: move;
+    }
+    
+    &-11 {
+      cursor: not-allowed;
+    }
+    
+    &-12 {
+      cursor: progress;
+    }
+    
+    &-13 {
+      cursor: text;
+    }
+    
+    &-14 {
+      cursor: vertical-text;
+    }
+    
+    &-15 {
+      cursor: zoom-in;
+    }
+    
+    &-16 {
+      cursor: zoom-out;
+    }
+  }
+}
