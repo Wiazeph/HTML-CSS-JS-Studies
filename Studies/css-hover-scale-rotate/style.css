@@ -1,0 +1,20 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+
+  background-color: #f3f4f6;
+}
+
+.scale-rotate .image {
+  width: 250px;
+  height: 250px;
+
+  transition: transform 0.5s;
+}
+
+.scale-rotate .image:hover {
+  transform: scale(1.2) rotate(20deg);
+}
