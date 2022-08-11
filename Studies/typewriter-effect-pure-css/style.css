@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+
+  background-color: #f0f2f4;
+  font-family: "Caveat", cursive;
+}
+
+
+
+.type-writer p {
+  margin: 0 auto;
+
+  color: #1d1e22;
+  font-size: 50px;
+
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  animation: typing 1.5s steps(100, end);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
