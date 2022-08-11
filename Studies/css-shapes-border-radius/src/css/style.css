@@ -1,0 +1,51 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #2a2c3c;
+}
+
+.shapes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 1100px;
+}
+.shapes .shape {
+  margin: 50px;
+  width: 100px;
+  height: 100px;
+  background-color: #b2e5e6;
+}
+.shapes .shape-1 {
+  border-radius: 0px;
+}
+.shapes .shape-2 {
+  border-radius: 25px;
+}
+.shapes .shape-3 {
+  border-radius: 50px;
+}
+.shapes .shape-4 {
+  border-radius: 35px 0px;
+}
+.shapes .shape-5 {
+  border-radius: 0px 75px;
+}
+.shapes .shape-6 {
+  border-radius: 100px 50px 0px 0px;
+}
+.shapes .shape-7 {
+  border-radius: 0px 100px 0px 0px;
+}
+.shapes .shape-8 {
+  border-radius: 50px 0px 100px 0px;
+}
+.shapes .shape-9 {
+  border-radius: 50px 100px 35px 35px;
+}
+.shapes .shape-10 {
+  border-radius: 100px 100px 0px 0px;
+}/*# sourceMappingURL=style.css.map */

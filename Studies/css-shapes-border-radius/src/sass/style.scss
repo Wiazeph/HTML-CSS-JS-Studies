@@ -1,0 +1,67 @@
+@import "../sass/utilities/mixins";
+
+
+
+body {
+  @include display-flex;
+
+  height: 100vh;
+
+  background-color: #2a2c3c;
+}
+
+.shapes {
+  @include display-flex;
+  flex-wrap: wrap;
+
+  width: 1100px;
+
+  .shape {
+    margin: 50px;
+
+    width: 100px;
+    height: 100px;
+
+    background-color: #b2e5e6;
+
+    &-1 {
+      border-radius: 0px;
+    }
+
+    &-2 {
+      border-radius: 25px;
+    }
+
+    &-3 {
+      border-radius: 50px;
+    }
+
+    &-4 {
+      border-radius: 35px 0px;
+    }
+
+    &-5 {
+      border-radius: 0px 75px;
+    }
+
+    &-6 {
+      border-radius: 100px 50px 0px 0px;
+    }
+
+    &-7 {
+      border-radius: 0px 100px 0px 0px;
+    }
+
+    &-8 {
+      border-radius: 50px 0px 100px 0px;
+    }
+
+    &-9 {
+      border-radius: 50px 100px 35px 35px;
+    }
+
+    &-10 {
+      border-radius: 100px 100px 0px 0px;
+    }
+  }
+}
