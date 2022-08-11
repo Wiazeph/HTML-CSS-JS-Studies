@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    height: 100vh;
+  
+    overflow: auto;
+  
+    scroll-snap-type: y mandatory;
+}
+
+.wrapper .section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    scroll-snap-align: center;
+}
+
+.wrapper .section-bg1 {
+    background-color: #9d4edd;
+}
+
+.wrapper .section-bg2 {
+    background-color: #42a5f5;
+}
+
+.wrapper .section-bg3 {
+    background-color: #de5448;
+}
+
+.wrapper .section p {
+    color: white;
+    font-size: 25px;
+}
