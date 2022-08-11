@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #2a2c3c;
+}
+
+.shake-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 75px;
+}
+.shake-inputs input[type=text] {
+  padding: 5px 20px;
+  width: 200px;
+  height: 35px;
+  background-color: #f3f4f6;
+  font-size: 16px;
+  border-radius: 15px;
+  outline: none;
+}
+.shake-inputs input[type=text]:invalid {
+  border: 3px solid red;
+  -webkit-animation: text-shake 0.3s;
+          animation: text-shake 0.3s;
+}
+@-webkit-keyframes text-shake {
+  25% {
+    transform: translateX(4px);
+  }
+  75% {
+    transform: translateX(-4px);
+  }
+  100% {
+    transform: translateX(4px);
+  }
+}
+@keyframes text-shake {
+  25% {
+    transform: translateX(4px);
+  }
+  75% {
+    transform: translateX(-4px);
+  }
+  100% {
+    transform: translateX(4px);
+  }
+}
+.shake-inputs input[type=number] {
+  padding: 5px 20px;
+  width: 200px;
+  height: 35px;
+  background-color: #f3f4f6;
+  font-size: 16px;
+  border-radius: 15px;
+  outline: none;
+}
+.shake-inputs input[type=number]:out-of-range {
+  border: 3px solid red;
+  -webkit-animation: number-shake 0.3s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+          animation: number-shake 0.3s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+@-webkit-keyframes number-shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(7px);
+  }
+  50% {
+    transform: translateX(-7px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes number-shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(7px);
+  }
+  50% {
+    transform: translateX(-7px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}/*# sourceMappingURL=style.css.map */

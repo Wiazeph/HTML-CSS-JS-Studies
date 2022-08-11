@@ -1,0 +1,19 @@
+@mixin display-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin input-settings {
+    padding: 5px 20px;
+  
+    width: 200px;
+    height: 35px;
+  
+    background-color: #f3f4f6;
+    font-size: 16px;
+  
+    border-radius: 15px;
+  
+    outline: none;
+}

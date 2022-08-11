@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@import "../sass/utilities/mixins";
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+
+
+body {
+  @include display-flex;
+
+  height: 100vh;
+
+  background-color: #2a2c3c;
+}
+
+.shake-inputs {
+  @include display-flex;
+  flex-direction: column;
+  gap: 75px;
+
+  input[type="text"] {
+    @include input-settings;
+
+    &:invalid {
+      border: 3px solid red;
+      animation: text-shake 0.3s;
+    }
+
+    @keyframes text-shake {
+      25% {
+        transform: translateX(4px);
+      }
+      75% {
+        transform: translateX(-4px);
+      }
+      100% {
+        transform: translateX(4px);
+      }
+    }
+  }
+
+  input[type="number"] {
+    @include input-settings;
+
+    &:out-of-range {
+      border: 3px solid red;
+      animation: number-shake 0.3s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    }
+
+    @keyframes number-shake {
+      0% {
+        transform: translateX(0);
+      }
+      25% {
+        transform: translateX(7px);
+      }
+      50% {
+        transform: translateX(-7px);
+      }
+      100% {
+        transform: translateX(0px);
+      }
+    }
+  }
+}
