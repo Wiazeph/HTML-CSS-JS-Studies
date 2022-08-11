@@ -1,0 +1,97 @@
+@import "../sass/utilities/mixins";
+@import "../sass/utilities/variables";
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+
+
+body {
+  @include display-flex;
+
+  height: 100vh;
+
+  background-color: #2a2c3c;
+}
+
+.selector-cards {
+  @include display-flex;
+  flex-direction: column;
+  gap: 50px;
+
+  .selector-card {
+    @include display-flex;
+    gap: 25px;
+
+    span {
+      width: 35px;
+      height: 35px;
+
+      background-color: #eee;
+
+      border-radius: 8px;
+    }
+
+    &-1 {
+      span {
+        &:nth-child(5) {
+          background-color: $primary-bg-color;
+        }
+      }
+    }
+
+    &-2 {
+      span {
+        &:nth-child(even) {
+          background-color: $primary-bg-color;
+        }
+      }
+    }
+
+    &-3 {
+      span {
+        &:nth-child(odd) {
+          background-color: $primary-bg-color;
+        }
+      }
+    }
+
+    &-4 {
+      span {
+        &:nth-child(n + 5) {
+          background-color: $primary-bg-color;
+        }
+      }
+    }
+
+    &-5 {
+      span {
+        &:nth-child(-n + 5) {
+          background-color: $primary-bg-color;
+        }
+      }
+    }
+
+    &-6 {
+      span {
+        &:nth-child(3n + 2) {
+          background-color: $primary-bg-color;
+        }
+      }
+    }
+
+    &-7 {
+      span {
+        &:last-child {
+          background-color: $primary-bg-color;
+        }
+      }
+    }
+  }
+}
