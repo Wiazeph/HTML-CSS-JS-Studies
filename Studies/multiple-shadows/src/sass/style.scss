@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@import "../sass/utilities/mixins";
+
+
+
+body {
+  @include display-flex;
+
+  height: 100vh;
+
+  background-color: #2a2c3c;
+}
+
+.shadows {
+  @include display-flex;
+  gap: 150px;
+
+  .multiple-shadow {
+
+    &-1 {
+      width: 50px;
+      height: 50px;
+
+      background-color: #10002b;
+
+      border-radius: 50px;
+
+      box-shadow: 0 0 0 5px #240046, 0 0 0 10px #3c096c, 0 0 0 15px #5a189a,
+        0 0 0 20px #7b2cbf, 0 0 0 25px #9d4edd, 0 0 0 30px #c77dff,
+        0 0 0 35px #e0aaff;
+
+      animation: shadow-scale 1.3s ease-in-out infinite;
+    }
+
+    &-2 {
+      width: 50px;
+      height: 50px;
+
+      background-color: #0d47a1;
+
+      border-radius: 50px;
+
+      box-shadow: 0 0 0 5px #1565c0, 0 0 0 10px #1976d2, 0 0 0 15px #1e88e5,
+        0 0 0 20px #2196f3, 0 0 0 25px #42a5f5, 0 0 0 30px #64b5f6,
+        0 0 0 35px #90caf9;
+
+      animation: shadow-scale 1.3s ease-in-out infinite;
+    }
+
+    &-3 {
+      width: 50px;
+      height: 50px;
+
+      background-color: #ff4800;
+
+      border-radius: 50px;
+
+      box-shadow: 0 0 0 5px #ff6000, 0 0 0 10px #ff6d00, 0 0 0 15px #ff7900,
+        0 0 0 20px #ff8500, 0 0 0 25px #ff9100, 0 0 0 30px #ff9e00,
+        0 0 0 35px #ffaa00;
+
+      animation: shadow-scale 1.3s ease-in-out infinite;
+    }
+
+    @keyframes shadow-scale {
+      0%,
+      40%,
+      100% {
+        transform: scale(1);
+      }
+      
+      20% {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
