@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Template</title>
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Tailwind CSS-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style type="text/tailwindcss">
+        @layer components {
+
+          .button-get {
+            @apply mb-[10px] w-full h-[48px] text-white bg-purple-700 border-solid border-2 border-purple-700 rounded-lg ease-in duration-200 hover:bg-purple-600
+          }
+
+          .button-chat {
+            @apply w-full h-[48px] text-gray-900 border-solid border-2 border-purple-700 rounded-lg ease-in duration-200 hover:bg-gray-100
+          }
+
+          .top-button {
+            @apply sm:py-[12px] sm:px-[20px] sm:w-auto sm:h-auto
+          }
+
+          .card-out {
+            @apply w-full sm:w-[380px] bg-white border-solid border border-gray-200 rounded-2xl
+          }
+
+          .card-in {
+            @apply flex flex-col gap-[30px] p-[30px] w-full
+          }
+
+          .card-tag {
+            @apply mx-auto py-[4px] px-[12px] w-fit text-purple-600 bg-purple-100 text-sm rounded-2xl
+          }
+
+          .card-price {
+            @apply mb-[10px] text-gray-900 text-4xl font-bold
+          }
+
+          .card-properties {
+            @apply flex flex-col gap-[10px] text-gray-500
+          }
+
+          .separator {
+            @apply w-full border-solid border border-gray-100
+          }
+
+        }
+    </style>
+    <!--Tailwind CSS-->
+
+    <!--Font-Awesome-->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+
+</head>
+
+<body>
+
+    <div class="my-[75px] mx-auto bg-gray-50 max-w-[1440px]">
+
+        <div class="flex items-center justify-center flex-col gap-[20px] py-[30px] px-[20px]">
+
+            <div class="text-purple-700 text-sm font-bold">Pricing</div>
+
+            <div class="text-center text-gray-900 text-4xl font-bold">Lorem ipsum dolor sit</div>
+
+            <p class="text-center text-gray-500 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia aspernatur ipsum necessitatibus!</p>
+
+            <div class="w-full sm:w-auto">
+
+                <button class="button-get top-button">Get started</button>
+
+                <button class="button-chat top-button">Chat to sales</button>
+
+            </div>
+
+        </div>
+
+        <div class="flex items-center justify-center flex-wrap gap-[30px] py-[30px] px-[20px]">
+
+            <div class="card-out">
+
+                <div class="card-in">
+
+                    <span class="card-tag">Basic plan</span>
+
+                    <div class="text-center">
+
+                        <div class="card-price">$10/mth</div>
+
+                        <div class="text-gray-500">Our most popular plan.</div>
+
+                    </div>
+
+                    <div class="w-full">
+
+                        <button class="button-get">Get started</button>
+        
+                        <button class="button-chat">Chat to sales</button>
+        
+                    </div>
+
+                    <div class="separator"></div>
+
+                    <div class="">
+
+                        <ul class="card-properties">
+                            <li><i class="fa-solid fa-circle-check text-green-500"></i><span class="ml-[10px]">Access to all basic features</span></li>
+                            <li><i class="fa-solid fa-circle-check text-green-500"></i><span class="ml-[10px]">Basic reporting and analytics</span></li>
+                            <li><i class="fa-solid fa-circle-check text-green-500"></i><span class="ml-[10px]">Up to 10 individual users</span></li>
+                            <li><i class="fa-solid fa-circle-check text-green-500"></i><span class="ml-[10px]">20GB individual data each user</span></li>
+                            <li><i class="fa-solid fa-circle-check text-green-500"></i><span class="ml-[10px]">Basic chat and email support</span></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="card-out">
+
+                <div class="card-in">
+
+                    <span class="card-tag">Business plan</span>
+
+                    <div class="text-center">
+
+                        <div class="card-price">$20/mth</div>
+
+                        <div class="text-gray-500">Growing teams up to 20 users.</div>
+
+                    </div>
+
+                    <div class="w-full">
+
+                        <button class="button-get">Get started</button>
+        
+                        <button class="button-chat">Chat to sales</button>
+        
+                    </div>
+
+                    <div class="separator"></div>
+
+                    <div class="">
+
+                        <ul class="card-properties">
+                            <li><i class="fa-solid fa-circle-check text-green-500"></i><span class="ml-[10px]">200+ integrations</span></li>
+                            <li><i class="fa-solid fa-circle-check text-green-500"></i><span class="ml-[10px]">Advanced reporting and analytics</span></li>
+                            <li><i class="fa-solid fa-circle-check text-green-500"></i><span class="ml-[10px]">Up to 20 individual users</span></li>
+                            <li><i class="fa-solid fa-circle-check text-green-500"></i><span class="ml-[10px]">40GB individual data each user</span></li>
+                            <li><i class="fa-solid fa-circle-check text-green-500"></i><span class="ml-[10px]">Priority chat and email support</span></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="card-out">
+
+                <div class="card-in">
+
+                    <div class="card-tag">Enterprise plan</div>
+
+                    <div class="text-center">
+
+                        <div class="card-price">$40/mth</div>
+
+                        <div class="text-gray-500">Advanced features + unlimited users.</div>
+
+                    </div>
+
+                    <div class="w-full">
+
+                        <button class="button-get">Get started</button>
+        
+                        <button class="button-chat">Chat to sales</button>
+        
+                    </div>
+
+                    <div class="separator"></div>
+
+                    <div class="">
+
+                        <ul class="card-properties">
+                            <li><i class="fa-solid fa-circle-check text-green-500"></i><span class="ml-[10px]">Advanced custom fields</span></li>
+                            <li><i class="fa-solid fa-circle-check text-green-500"></i><span class="ml-[10px]">Audit log and data history</span></li>
+                            <li><i class="fa-solid fa-circle-check text-green-500"></i><span class="ml-[10px]">Unlimited individual users</span></li>
+                            <li><i class="fa-solid fa-circle-check text-green-500"></i><span class="ml-[10px]">Unlimited individual data</span></li>
+                            <li><i class="fa-solid fa-circle-check text-green-500"></i><span class="ml-[10px]">Personalised+priotity service</span></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -47,6 +47,7 @@
 | `25` | **[css-selector-child](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/css-selector-child)**                        | [Codepen](https://codepen.io/emr3rden/pen/JjpbPpW) | `HTML-CSS-SCSS` |
 | `26` | **[css-shapes-border-radius](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/css-shapes-border-radius)**            | [Codepen](https://codepen.io/emr3rden/pen/BaYBNzx) | `HTML-CSS-SCSS` |
 | `27` | **[footer-template-1](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/footer-template-1)**                          | [Codepen](https://codepen.io/emr3rden/pen/rNdZXzY) | `HTML-Tailwind CSS` |
+| `28` | **[pricing-section](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/pricing-section)**                              | [Codepen](https://codepen.io/emr3rden/pen/WNzawrE) | `HTML-Tailwind CSS` |
 
 
 
