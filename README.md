@@ -47,7 +47,9 @@
 | `25` | **[css-selector-child](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/css-selector-child)**                        | [Codepen](https://codepen.io/emr3rden/pen/JjpbPpW) | `HTML-CSS-SCSS` |
 | `26` | **[css-shapes-border-radius](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/css-shapes-border-radius)**            | [Codepen](https://codepen.io/emr3rden/pen/BaYBNzx) | `HTML-CSS-SCSS` |
 | `27` | **[footer-template-1](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/footer-template-1)**                          | [Codepen](https://codepen.io/emr3rden/pen/rNdZXzY) | `HTML-Tailwind CSS` |
-| `28` | **[pricing-section](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/pricing-section)**                              | [Codepen](https://codepen.io/emr3rden/pen/WNzawrE) | `HTML-Tailwind CSS` |
+| `28` | **[pricing-section-1](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/pricing-section-1)**                          | [Codepen](https://codepen.io/emr3rden/pen/WNzawrE) | `HTML-Tailwind CSS` |
+| `29` | **[newsletter-section-1](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/newsletter-section-1)**                    | [Codepen](https://codepen.io/emr3rden/pen/JjLxmyv) | `HTML-Tailwind CSS` |
+| `30` | **[newsletter-section-2](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/newsletter-section-2)**                    | [Codepen](https://codepen.io/emr3rden/pen/gOeqBxN) | `HTML-Tailwind CSS` |
 
 
 
@@ -65,4 +67,3 @@
 - Codepen: <a href="https://codepen.io/emr3rden">@emr3rden</a>
 - LinkedIn: <a href="https://www.linkedin.com/in/emr3rden/">@emr3rden</a>
 - Website: <a href="https://emr3rden.github.io/">emr3rden.github.io</a>
-
