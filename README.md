@@ -2,7 +2,7 @@
     <img src="https://skillicons.dev/icons?i=html,css,js"/>
 </p>
 
-<p align="center">Here you can find everything I've learned about HTML, CSS and JS, the work I've done, the resources I've used, the tools and everything else.</p>
+<p align="center">Here you can find my works where I applied what I learned about HTML, CSS and JS.</p>
 
 <hr/>
 
