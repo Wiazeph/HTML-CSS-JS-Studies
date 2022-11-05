@@ -51,6 +51,7 @@
 | `29` | **[newsletter-section-1](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/newsletter-section-1)**                    | [Codepen](https://codepen.io/emr3rden/pen/JjLxmyv) | `HTML-Tailwind CSS` |
 | `30` | **[newsletter-section-2](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/newsletter-section-2)**                    | [Codepen](https://codepen.io/emr3rden/pen/gOeqBxN) | `HTML-Tailwind CSS` |
 | `31` | **[team-section-1](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/team-section-1)**                                | [Codepen](https://codepen.io/emr3rden/pen/NWMxmOz) | `HTML-Tailwind CSS` |
+| `32` | **[card-hover-effect-1](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/card-hover-effect-1)**                      | [Codepen](https://codepen.io/emr3rden/pen/abKZLqq) | `HTML-CSS-SCSS` |
 
 
 

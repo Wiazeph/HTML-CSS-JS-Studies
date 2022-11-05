@@ -1,0 +1,131 @@
+@import "../sass/utilities/mixins";
+
+
+
+body {
+  @include display-flex;
+
+  height: 100vh;
+
+  background-color: #2a2c3c;
+}
+
+.cards {
+  @include display-flex;
+  gap: 35px;
+
+  .card {
+    position: relative;
+
+    width: 100px;
+    height: 100px;
+
+    border-radius: 15px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+
+      display: block;
+
+      border-radius: 15px;
+
+      transition: all 0.35s ease-in-out;
+    }
+
+    &::before {
+      top: -10px;
+      z-index: -1;
+
+      width: 80%;
+      height: 80%;
+    }
+
+    &::after {
+      top: -20px;
+      z-index: -2;
+
+      width: 60%;
+      height: 60%;
+    }
+
+    &:hover {
+      &::before {
+        top: -5px;
+
+        width: 95%;
+        height: 95%;
+      }
+
+      &::after {
+        top: -10px;
+
+        width: 90%;
+        height: 90%;
+      }
+    }
+
+    &-1 {
+      background-color: #1565c0;
+
+      &::before {
+        background-color: #2196f3;
+      }
+
+      &::after {
+        background-color: #90caf9;
+      }
+    }
+
+    &-2 {
+      background-color: #fff200;
+
+      &::before {
+        background-color: #f0ff47;
+      }
+
+      &::after {
+        background-color: #f5ff81;
+      }
+    }
+
+    &-3 {
+      background-color: #7b2cbf;
+
+      &::before {
+        background-color: #ab5ee9;
+      }
+
+      &::after {
+        background-color: #e0aaff;
+      }
+    }
+
+    &-4 {
+      background-color: #00ff37;
+
+      &::before {
+        background-color: #50ff76;
+      }
+
+      &::after {
+        background-color: #7cff98;
+      }
+    }
+
+    &-5 {
+      background-color: #ff8500;
+
+      &::before {
+        background-color: #ffac28;
+      }
+
+      &::after {
+        background-color: #ffc756;
+      }
+    }
+  }
+}

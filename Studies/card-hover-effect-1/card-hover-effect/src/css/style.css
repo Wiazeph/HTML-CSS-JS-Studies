@@ -1,0 +1,96 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #2a2c3c;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+.cards .card {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+}
+.cards .card::before, .cards .card::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  border-radius: 15px;
+  transition: all 0.35s ease-in-out;
+}
+.cards .card::before {
+  top: -10px;
+  z-index: -1;
+  width: 80%;
+  height: 80%;
+}
+.cards .card::after {
+  top: -20px;
+  z-index: -2;
+  width: 60%;
+  height: 60%;
+}
+.cards .card:hover::before {
+  top: -5px;
+  width: 95%;
+  height: 95%;
+}
+.cards .card:hover::after {
+  top: -10px;
+  width: 90%;
+  height: 90%;
+}
+.cards .card-1 {
+  background-color: #1565c0;
+}
+.cards .card-1::before {
+  background-color: #2196f3;
+}
+.cards .card-1::after {
+  background-color: #90caf9;
+}
+.cards .card-2 {
+  background-color: #fff200;
+}
+.cards .card-2::before {
+  background-color: #f0ff47;
+}
+.cards .card-2::after {
+  background-color: #f5ff81;
+}
+.cards .card-3 {
+  background-color: #7b2cbf;
+}
+.cards .card-3::before {
+  background-color: #ab5ee9;
+}
+.cards .card-3::after {
+  background-color: #e0aaff;
+}
+.cards .card-4 {
+  background-color: #00ff37;
+}
+.cards .card-4::before {
+  background-color: #50ff76;
+}
+.cards .card-4::after {
+  background-color: #7cff98;
+}
+.cards .card-5 {
+  background-color: #ff8500;
+}
+.cards .card-5::before {
+  background-color: #ffac28;
+}
+.cards .card-5::after {
+  background-color: #ffc756;
+}/*# sourceMappingURL=style.css.map */
