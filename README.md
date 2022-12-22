@@ -16,8 +16,6 @@
 | `6` | **[flex flex-grow](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/FLEX/flex%20flex-grow)**             | [Codepen](https://codepen.io/emr3rden/pen/oNpPvry) | `HTML-CSS-SCSS` |
 | `7` | **[flex row-column-gap](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/FLEX/flex%20row-column-gap)**   | [Codepen](https://codepen.io/emr3rden/pen/KKZBjRq) | `HTML-CSS-SCSS` |
 
-<hr/>
-
 |      | Title                                                                                                                                  |                                                    | Technologies    |
 | :--- | :------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------- | :-------------- |
 | `1`  | **[typewriter-effect-pure-css](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/typewriter-effect-pure-css)**       | [Codepen](https://codepen.io/emr3rden/pen/yLprzrp) | `HTML-CSS`      |
@@ -51,14 +49,10 @@
 | `7` | **[expanding-gallery](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/expanding-gallery)**           | [Codepen](https://codepen.io/emr3rden/pen/vYdVaYo) | `HTML-CSS-SCSS` |
 | `8` | **[card-hover-effect-1](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/card-hover-effect-1)**       | [Codepen](https://codepen.io/emr3rden/pen/abKZLqq) | `HTML-CSS-SCSS` |
 
-<hr/>
-
 |     | Title                                                                                                                        |                                                    | Technologies    |
 | :-- | :--------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------- | :-------------- |
 | `1` | **[Firefox-New-Tab-Page (Clone)](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/Firefox-New-Tab-Page)** | [Codepen](https://codepen.io/emr3rden/pen/KKQYZKz) | `HTML-CSS-SCSS` |
 | `2` | **[Spotify-Website (Clone)](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/Spotify-Website)**           | [Codepen](https://codepen.io/emr3rden/pen/Barobre) | `HTML-CSS-SCSS` |
-
-<hr/>
 
 |     | Title                                                                                                                |                                                    | Technologies        |
 | :-- | :------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------- | :------------------ |
