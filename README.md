@@ -56,12 +56,13 @@
 
 |     | Title                                                                                                                |                                                    | Technologies        |
 | :-- | :------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------- | :------------------ |
-| `1` | **[footer-template-1](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/footer-template-1)**       | [Codepen](https://codepen.io/emr3rden/pen/rNdZXzY) | `HTML-Tailwind CSS` |
-| `2` | **[pricing-section-1](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/pricing-section-1)**       | [Codepen](https://codepen.io/emr3rden/pen/WNzawrE) | `HTML-Tailwind CSS` |
-| `3` | **[newsletter-section-1](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/newsletter-section-1)** | [Codepen](https://codepen.io/emr3rden/pen/JjLxmyv) | `HTML-Tailwind CSS` |
-| `4` | **[newsletter-section-2](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/newsletter-section-2)** | [Codepen](https://codepen.io/emr3rden/pen/gOeqBxN) | `HTML-Tailwind CSS` |
-| `5` | **[team-section-1](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/team-section-1)**             | [Codepen](https://codepen.io/emr3rden/pen/NWMxmOz) | `HTML-Tailwind CSS` |
-| `6` | **[faq-section-1](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/faq-section-1)**               | [Codepen](https://codepen.io/emr3rden/pen/LYrLawj) | `HTML-Tailwind CSS` |
+| `1` | **[landing-page-1](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/landing-page-1)**             | []()                                               | `HTML-Tailwind CSS` |
+| `2` | **[footer-template-1](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/footer-template-1)**       | [Codepen](https://codepen.io/emr3rden/pen/rNdZXzY) | `HTML-Tailwind CSS` |
+| `3` | **[pricing-section-1](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/pricing-section-1)**       | [Codepen](https://codepen.io/emr3rden/pen/WNzawrE) | `HTML-Tailwind CSS` |
+| `4` | **[newsletter-section-1](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/newsletter-section-1)** | [Codepen](https://codepen.io/emr3rden/pen/JjLxmyv) | `HTML-Tailwind CSS` |
+| `5` | **[newsletter-section-2](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/newsletter-section-2)** | [Codepen](https://codepen.io/emr3rden/pen/gOeqBxN) | `HTML-Tailwind CSS` |
+| `6` | **[team-section-1](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/team-section-1)**             | [Codepen](https://codepen.io/emr3rden/pen/NWMxmOz) | `HTML-Tailwind CSS` |
+| `7` | **[faq-section-1](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/faq-section-1)**               | [Codepen](https://codepen.io/emr3rden/pen/LYrLawj) | `HTML-Tailwind CSS` |
 
 <hr/>
 

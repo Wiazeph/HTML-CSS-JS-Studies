@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Landing Page</title>
+
+    <!-- Tailwind CSS -->
+    <link href="/dist/style.css" rel="stylesheet" />
+    <!-- Tailwind CSS -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+
+    <!--Font-Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Font-Awesome-->
+  </head>
+  <body id="body" class="font-Inter text-gray-900">
+    <nav
+      class="fixed top-0 left-0 z-50 w-full border-b border-solid border-b-gray-200 bg-white"
+    >
+      <div
+        class="container relative mx-auto flex items-center justify-between px-[15px] py-[17.5px] sm:px-[30px] sm:py-0 md:px-[45px] lg:px-[60px] xl:px-[75px]"
+      >
+        <div>Name/Logo</div>
+
+        <!-- hamburger-menu -->
+        <div id="hamburger" class="inline-block sm:hidden">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- hamburger-menu -->
+
+        <div
+          id="menu"
+          class="absolute top-[71px] -left-full flex h-[calc(100vh-71px)] w-full flex-col justify-center border-b border-solid border-b-gray-200 bg-white transition-all duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] sm:relative sm:left-0 sm:top-0 sm:h-auto sm:w-auto sm:flex-row sm:items-center sm:gap-2 sm:border-none md:gap-4 lg:gap-5"
+        >
+          <ul
+            class="-mt-4 flex flex-col items-center gap-5 sm:-mt-0 sm:flex-row sm:gap-2 md:gap-4 lg:gap-5"
+          >
+            <li class="nav-link">
+              <a href="#">Home</a>
+            </li>
+            <li class="nav-link">
+              <a href="#">Products</a>
+            </li>
+            <li class="nav-link">
+              <a href="#">Resources</a>
+            </li>
+            <li class="nav-link">
+              <a href="#">Pricing</a>
+            </li>
+          </ul>
+          <div
+            class="hidden sm:block sm:h-[20px] sm:border-r sm:border-gray-400"
+          ></div>
+          <div
+            class="mt-9 flex h-fit justify-center gap-5 sm:mt-0 sm:gap-2 md:gap-4 lg:gap-5"
+          >
+            <button
+              class="menu-login-button border border-solid border-gray-300 text-gray-700"
+            >
+              Log In
+            </button>
+            <button class="menu-login-button bg-purple-600 text-white">
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header
+      id="header"
+      class="mt-[100px] sm:mt-[105px] md:mt-[110px] lg:mt-[115px]"
+    >
+      <div
+        class="container mx-auto px-[15px] sm:px-[30px] md:px-[45px] lg:px-[60px] xl:px-[75px]"
+      >
+        <section
+          class="mb-[35px] flex flex-col items-center justify-center gap-[15px] text-center sm:mb-[40px] sm:gap-[20px] md:mb-[45px] md:gap-[25px] lg:mb-[50px] lg:gap-[30px] xl:gap-[35px]"
+        >
+          <div
+            class="flex items-center justify-between gap-[8px] rounded-full bg-purple-50 p-[5px] text-xs font-semibold text-purple-700"
+          >
+            <div class="rounded-full bg-white px-2 py-1">
+              <a href="#">What’s new?</a>
+            </div>
+            <a href="#" class="flex items-center"
+              >Instantly issue virtual cards<svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="ml-[3px] mt-[1px] h-4 w-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                /></svg
+            ></a>
+          </div>
+          <div class="text-4xl font-black sm:text-5xl md:text-6xl">
+            No more banking headaches
+          </div>
+          <p class="text-lg font-medium text-gray-600 sm:text-xl lg:w-3/5">
+            No money, no problems. Untitled is a next-generation financial
+            technology company in the process of reinventing banking. 30-day
+            free trial.
+          </p>
+          <div
+            class="flex w-full flex-col-reverse gap-[10px] font-semibold sm:w-auto sm:flex-row"
+          >
+            <button
+              class="header-button flex items-center justify-center gap-[3px] border border-solid border-gray-300 text-gray-700 shadow"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="mb-[1px] h-5 w-5 sm:h-6 sm:w-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z"
+                />
+              </svg>
+              Demo
+            </button>
+            <button class="header-button bg-purple-600 text-white">
+              Sign up
+            </button>
+          </div>
+        </section>
+        <section
+          class="flex select-none items-center justify-center overflow-hidden bg-gray-200 py-[35px] md:py-[40px] lg:py-[45px] xl:py-[50px]"
+        >
+          <div
+            class="relative h-[275px] w-[275px] -translate-x-[15px] sm:h-[280px] sm:-translate-x-[55px] sm:scale-105 md:h-[285px] md:-translate-x-[65px] md:scale-110 lg:h-[290px] lg:-translate-x-[75px] lg:scale-125 xl:h-[295px] xl:translate-y-[95px] xl:-translate-x-[85px] xl:scale-150 2xl:h-[300px] 2xl:translate-y-[75px] 2xl:-translate-x-[100px] 2xl:scale-[1.75]"
+          >
+            <div
+              class="absolute bottom-10 left-0 z-10 flex h-[150px] w-[250px] justify-between rounded-2xl bg-purple-800 p-[15px] text-sm text-white"
+            >
+              <div class="flex flex-col justify-between">
+                <div class="font-semibold">Untitled.</div>
+                <div class="flex flex-col gap-[5px]">
+                  <div class="flex justify-between text-xs">
+                    <div>PHOENIX BAKER</div>
+                    <div>06/24</div>
+                  </div>
+                  <div class="flex gap-[5px] font-semibold">
+                    <div>1234</div>
+                    <div>1234</div>
+                    <div>1234</div>
+                    <div>1234</div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col items-end justify-between">
+                <div class="h-[20px] w-[20px] rotate-90">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="flex h-[30px] w-[40px] items-center justify-center rounded bg-gray-50/10"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    class="h-[25px] w-[25px]"
+                  >
+                    <path
+                      fill="#FF5F00"
+                      d="M15.245 17.831h-6.49V6.168h6.49v11.663z"
+                    />
+                    <path
+                      fill="#EB001B"
+                      d="M9.167 12A7.404 7.404 0 0 1 12 6.169 7.417 7.417 0 0 0 0 12a7.417 7.417 0 0 0 11.999 5.831A7.406 7.406 0 0 1 9.167 12z"
+                    />
+                    <path
+                      fill="#F79E1B"
+                      d="M24 12a7.417 7.417 0 0 1-12 5.831c1.725-1.358 2.833-3.465 2.833-5.831S13.725 7.527 12 6.169A7.417 7.417 0 0 1 24 12z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute bottom-[60px] -right-[100px] z-20 flex h-[150px] w-[250px] rotate-[30deg] justify-between rounded-2xl border border-solid border-white bg-white/20 p-[15px] text-sm text-white backdrop-blur-lg"
+            >
+              <div class="flex flex-col justify-between">
+                <div class="font-semibold">Untitled.</div>
+                <div class="flex flex-col gap-[5px]">
+                  <div class="flex justify-between text-xs">
+                    <div>OLIVIA RHYE</div>
+                    <div>06/24</div>
+                  </div>
+                  <div class="flex gap-[5px] font-semibold">
+                    <div>1234</div>
+                    <div>1234</div>
+                    <div>1234</div>
+                    <div>1234</div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col items-end justify-between">
+                <div class="h-[20px] w-[20px] rotate-90">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="flex h-[30px] w-[40px] items-center justify-center rounded bg-gray-50/10"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    class="h-[25px] w-[25px]"
+                  >
+                    <path
+                      fill="#ffffff"
+                      d="M15.245 17.831h-6.49V6.168h6.49v11.663z"
+                    />
+                    <path
+                      fill="#fcfcfc"
+                      d="M9.167 12A7.404 7.404 0 0 1 12 6.169 7.417 7.417 0 0 0 0 12a7.417 7.417 0 0 0 11.999 5.831A7.406 7.406 0 0 1 9.167 12z"
+                    />
+                    <path
+                      fill="#fcfcfc"
+                      d="M24 12a7.417 7.417 0 0 1-12 5.831c1.725-1.358 2.833-3.465 2.833-5.831S13.725 7.527 12 6.169A7.417 7.417 0 0 1 24 12z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <main id="main">
+      <div
+        class="container mx-auto px-[15px] sm:px-[30px] md:px-[45px] lg:px-[60px] xl:px-[75px]"
+      >
+        <section
+          class="flex flex-col gap-[35px] py-[35px] sm:py-[45px] md:py-[55px] lg:py-[65px] xl:py-[75px]"
+        >
+          <div class="text-center">Join 4,000+ companies already growing</div>
+          <ul
+            class="flex flex-wrap items-center justify-center gap-10 sm:justify-around"
+          >
+            <li>Logo</li>
+            <li>Logo</li>
+            <li>Logo</li>
+            <li>Logo</li>
+            <li>Logo</li>
+          </ul>
+        </section>
+        <section
+          class="flex flex-col gap-[35px] bg-gray-50 p-[35px] sm:gap-[45px] sm:py-[45px] md:gap-[55px] md:py-[55px] lg:gap-[65px] lg:py-[65px] xl:gap-[75px] xl:py-[75px]"
+        >
+          <div class="flex flex-col gap-[15px] text-center">
+            <div class="text-sm font-semibold text-purple-700">Features</div>
+            <div class="text-3xl font-semibold text-gray-900">
+              All you need to run your finances effectively
+            </div>
+            <div class="text-gray-600">
+              Open a full-featured account in with virtual cards in less than 5
+              minutes.
+            </div>
+          </div>
+          <div
+            class="flex flex-col justify-center gap-[50px] sm:flex-row sm:flex-wrap lg:gap-[35px]"
+          >
+            <div
+              class="features-card h-min sm:w-[calc(50%-25px)] lg:w-[calc(33%-25px)]"
+            >
+              <div class="features-card-svg-bg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="features-card-svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"
+                  />
+                </svg>
+              </div>
+              <div class="text-lg font-bold">Share team inboxes</div>
+              <div class="text-gray-600">
+                Whether you have a team of 2 or 200, our shared team inboxes
+                keep everyone on the same page and in the loop.
+              </div>
+            </div>
+            <div
+              class="features-card h-min sm:w-[calc(50%-25px)] lg:w-[calc(33%-25px)]"
+            >
+              <div class="features-card-svg-bg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="features-card-svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"
+                  />
+                </svg>
+              </div>
+              <div class="text-lg font-bold">Connect with customers</div>
+              <div class="text-gray-600">
+                Solve a problem or close a sale in real-time with chat. If no
+                one is available, customers are seamlessly routed to email
+                without confusion.
+              </div>
+            </div>
+            <div
+              class="features-card h-min sm:w-[calc(50%-25px)] lg:w-[calc(33%-25px)]"
+            >
+              <div class="features-card-svg-bg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="features-card-svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
+                  />
+                </svg>
+              </div>
+              <div class="text-lg font-bold">Deliver instant answers</div>
+              <div class="text-gray-600">
+                An all-in-one customer service platform that helps you balance
+                everything your customers need to be happy.
+              </div>
+            </div>
+            <div
+              class="features-card h-min sm:w-[calc(50%-25px)] lg:w-[calc(33%-25px)]"
+            >
+              <div class="features-card-svg-bg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="features-card-svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                  />
+                </svg>
+              </div>
+              <div class="text-lg font-bold">
+                Our people make the difference
+              </div>
+              <div class="text-gray-600">
+                We’re an extension of your customer service team, and all of our
+                resources are free. Chat to our friendly team 24/7 when you need
+                help.
+              </div>
+            </div>
+            <div
+              class="features-card h-min sm:w-[calc(50%-25px)] lg:w-[calc(33%-25px)]"
+            >
+              <div class="features-card-svg-bg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="features-card-svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z"
+                  />
+                </svg>
+              </div>
+              <div class="text-lg font-bold">
+                Connect the tools you already use
+              </div>
+              <div class="text-gray-600">
+                Explore 100+ integrations that make your day-to-day workflow
+                more efficient and familiar. Plus, our extensive developer
+                tools.
+              </div>
+            </div>
+            <div
+              class="features-card h-min sm:w-[calc(50%-25px)] lg:w-[calc(33%-25px)]"
+            >
+              <div class="features-card-svg-bg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="features-card-svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605"
+                  />
+                </svg>
+              </div>
+              <div class="text-lg font-bold">Manage your team with reports</div>
+              <div class="text-gray-600">
+                Measure what matters with Untitled’s easy-to-use reports. You
+                can filter, export, and drilldown on the data in a couple
+                clicks.
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="my-[35px] flex flex-col gap-[20px] rounded-2xl bg-purple-800 px-[15px] py-[35px] text-center sm:my-[40px] sm:py-[40px] md:my-[45px] md:gap-[25px] md:py-[45px] lg:my-[50px] lg:py-[50px] xl:gap-[30px]"
+        >
+          <div class="text-2xl font-bold text-gray-50 md:text-3xl">
+            Start your 30-day free trial
+          </div>
+          <div class="text-gray-50 md:text-lg">
+            Join over 4,000+ startups already growing with Untitled.
+          </div>
+          <div
+            class="flex flex-col gap-[10px] sm:flex-row-reverse sm:items-center sm:justify-center"
+          >
+            <button
+              class="h-[48px] w-full rounded-lg bg-purple-600 font-bold text-white sm:w-[150px]"
+            >
+              Get started
+            </button>
+            <button
+              class="h-[48px] w-full rounded-lg bg-white font-bold text-gray-700 sm:w-[150px]"
+            >
+              Learn more
+            </button>
+          </div>
+        </section>
+        <section
+          class="border-b border-solid border-b-gray-200 pb-[35px] sm:pb-[45px] md:pb-[55px] lg:pb-[65px] xl:pb-[75px]"
+        >
+          <div
+            class="mb-[35px] flex flex-col gap-[15px] text-center sm:mb-[40px] md:mb-[45px] lg:mb-[50px]"
+          >
+            <div class="text-sm font-semibold text-purple-700">Pricing</div>
+            <div class="text-3xl font-semibold text-gray-900">
+              Plans that fit your scale
+            </div>
+            <div class="text-gray-600">
+              Simple, transparent pricing that grows with you. Try any plan free
+              for 30 days.
+            </div>
+          </div>
+          <div
+            class="flex flex-wrap items-center justify-center gap-[15px] sm:gap-[20px] md:gap-[25px] lg:gap-[30px]"
+          >
+            <div class="pricing-card">
+              <span class="pricing-card-tag">Basic Plan</span>
+              <div class="text-center">
+                <div class="pricing-card-price">$10/mth</div>
+                <div class="text-gray-500">
+                  Basic features for up to 10 users.
+                </div>
+              </div>
+              <div class="w-full">
+                <button class="pricing-card-button-get">Get started</button>
+                <button class="pricing-card-button-chat">Chat to sales</button>
+              </div>
+              <div class="w-full border-b border-solid border-gray-200"></div>
+              <ul class="pricing-card-properties">
+                <li>
+                  <i class="fa-solid fa-circle-check text-green-500"></i
+                  ><span class="ml-[10px]">Access to all basic features</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check text-green-500"></i
+                  ><span class="ml-[10px]">Basic reporting and analytics</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check text-green-500"></i
+                  ><span class="ml-[10px]">Up to 10 individual users</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check text-green-500"></i
+                  ><span class="ml-[10px]">20GB individual data each user</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check text-green-500"></i
+                  ><span class="ml-[10px]">Basic chat and email support</span>
+                </li>
+              </ul>
+            </div>
+            <div class="pricing-card">
+              <span class="pricing-card-tag">Business plan</span>
+              <div class="text-center">
+                <div class="pricing-card-price">$20/mth</div>
+                <div class="text-gray-500">
+                  Advanced features and reporting.
+                </div>
+              </div>
+              <div class="w-full">
+                <button class="pricing-card-button-get">Get started</button>
+                <button class="pricing-card-button-chat">Chat to sales</button>
+              </div>
+              <div class="w-full border-b border-solid border-gray-200"></div>
+              <ul class="pricing-card-properties">
+                <li>
+                  <i class="fa-solid fa-circle-check text-green-500"></i
+                  ><span class="ml-[10px]">Access to all basic features</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check text-green-500"></i
+                  ><span class="ml-[10px]">Basic reporting and analytics</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check text-green-500"></i
+                  ><span class="ml-[10px]">Up to 10 individual users</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check text-green-500"></i
+                  ><span class="ml-[10px]">20GB individual data each user</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check text-green-500"></i
+                  ><span class="ml-[10px]">Basic chat and email support</span>
+                </li>
+              </ul>
+            </div>
+            <div class="pricing-card">
+              <span class="pricing-card-tag">Enterprise plan</span>
+              <div class="text-center">
+                <div class="pricing-card-price">$40/mth</div>
+                <div class="text-gray-500">Unlimited features.</div>
+              </div>
+              <div class="w-full">
+                <button class="pricing-card-button-get">Get started</button>
+                <button class="pricing-card-button-chat">Chat to sales</button>
+              </div>
+              <div class="w-full border-b border-solid border-gray-200"></div>
+              <ul class="pricing-card-properties">
+                <li>
+                  <i class="fa-solid fa-circle-check text-green-500"></i
+                  ><span class="ml-[10px]">Access to all basic features</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check text-green-500"></i
+                  ><span class="ml-[10px]">Basic reporting and analytics</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check text-green-500"></i
+                  ><span class="ml-[10px]">Up to 10 individual users</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check text-green-500"></i
+                  ><span class="ml-[10px]">20GB individual data each user</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check text-green-500"></i
+                  ><span class="ml-[10px]">Basic chat and email support</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section
+          class="py-[35px] sm:py-[45px] md:py-[55px] lg:py-[65px] xl:py-[75px]"
+        >
+          <div
+            class="mb-[35px] flex flex-col gap-[30px] sm:mb-[40px] sm:text-center md:mb-[45px] lg:mb-[50px] lg:flex-row lg:justify-between lg:text-left"
+          >
+            <div>
+              <div class="mb-[15px] text-3xl font-semibold text-gray-900">
+                Don’t just take our word for it
+              </div>
+              <div class="text-gray-600">
+                Hear from some of our amazing customers who are automating their
+                finances.
+              </div>
+            </div>
+
+            <div
+              class="flex w-full flex-col-reverse gap-[10px] sm:w-auto sm:flex-row sm:justify-center"
+            >
+              <button
+                class="flex h-[48px] w-full items-center justify-center gap-[3px] rounded-lg border border-solid border-gray-300 text-gray-700 shadow sm:w-[150px]"
+              >
+                Create Account
+              </button>
+              <button
+                class="h-[48px] w-full rounded-lg bg-purple-600 text-white sm:w-[150px]"
+              >
+                Our customers
+              </button>
+            </div>
+          </div>
+
+          <ul
+            class="no-scrollbar flex h-[425px] w-full snap-x gap-[15px] overflow-x-auto sm:gap-[20px] md:gap-[25px] lg:gap-[30px]"
+          >
+            <li class="swiper">
+              <img
+                class="h-full w-full object-cover"
+                src="https://images.pexels.com/photos/14616909/pexels-photo-14616909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              />
+            </li>
+            <li class="swiper">
+              <img
+                class="h-full w-full object-cover"
+                src="https://images.pexels.com/photos/262391/pexels-photo-262391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              />
+            </li>
+            <li class="swiper">
+              <img
+                class="h-full w-full object-cover"
+                src="https://images.pexels.com/photos/1848565/pexels-photo-1848565.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              />
+            </li>
+            <li class="swiper">
+              <img
+                class="h-full w-full object-cover"
+                src="https://images.pexels.com/photos/2690323/pexels-photo-2690323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              />
+            </li>
+            <li class="swiper">
+              <img
+                class="h-full w-full object-cover"
+                src="https://images.pexels.com/photos/1192609/pexels-photo-1192609.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              />
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer id="footer" class="bg-gray-50">
+      <div
+        class="container mx-auto flex flex-col px-[15px] sm:px-[30px] md:px-[45px] lg:px-[60px] xl:px-[75px]"
+      >
+        <div
+          class="flex flex-col gap-[50px] py-[35px] sm:flex-row sm:items-center sm:justify-between sm:gap-0 sm:py-[40px] md:py-[45px] lg:py-[50px]"
+        >
+          <div class="text-center sm:w-1/3 sm:text-left">
+            <div class="mb-[30px] text-2xl md:text-3xl">Name/Logo</div>
+            <div class="text-gray-600">
+              Design amazing digital experiences that create more happy in the
+              world.
+            </div>
+          </div>
+
+          <div class="flex justify-around sm:w-2/5 sm:gap-[50px]">
+            <ul class="flex flex-col gap-[10px]">
+              <span class="pb-[10px] font-bold">Product</span>
+              <li><a href="#" class="footer-link">Overview</a></li>
+              <li><a href="#" class="footer-link">Features</a></li>
+              <li><a href="#" class="footer-link">Solutions</a></li>
+              <li><a href="#" class="footer-link">Tutorials</a></li>
+              <li><a href="#" class="footer-link">Pricing</a></li>
+              <li><a href="#" class="footer-link">Releases</a></li>
+            </ul>
+            <ul class="flex flex-col gap-[10px]">
+              <span class="pb-[5px] font-bold">Resources</span>
+              <li><a href="#" class="footer-link">Blog</a></li>
+              <li><a href="#" class="footer-link">Newsletter</a></li>
+              <li><a href="#" class="footer-link">Events</a></li>
+              <li><a href="#" class="footer-link">Help centre</a></li>
+              <li><a href="#" class="footer-link">Tutorials</a></li>
+              <li><a href="#" class="footer-link">Support</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-center gap-[15px] border-t border-solid border-t-gray-200 py-[35px] text-center text-gray-500 sm:flex-row-reverse sm:justify-between"
+        >
+          <div class="flex gap-[15px]">
+            <div><a href="#" class="hover:underline">Terms</a></div>
+            <div><a href="#" class="hover:underline">Privacy</a></div>
+            <div><a href="#" class="hover:underline">Cookies</a></div>
+          </div>
+          <div>© 2077 Untitled UI. All rights reserved.</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/src/hamburger-menu.js"></script>
+  </body>
+</html>
