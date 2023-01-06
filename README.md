@@ -56,7 +56,7 @@
 
 |     | Title                                                                                                                |                                                    | Technologies        |
 | :-- | :------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------- | :------------------ |
-| `1` | **[landing-page-1](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/landing-page-1)**             | []()                                               | `HTML-Tailwind CSS` |
+| `1` | **[landing-page-1](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/landing-page-1)**             | [Vercel](https://landing-page-1-eight.vercel.app/) | `HTML-Tailwind CSS` |
 | `2` | **[footer-template-1](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/footer-template-1)**       | [Codepen](https://codepen.io/emr3rden/pen/rNdZXzY) | `HTML-Tailwind CSS` |
 | `3` | **[pricing-section-1](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/pricing-section-1)**       | [Codepen](https://codepen.io/emr3rden/pen/WNzawrE) | `HTML-Tailwind CSS` |
 | `4` | **[newsletter-section-1](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/newsletter-section-1)** | [Codepen](https://codepen.io/emr3rden/pen/JjLxmyv) | `HTML-Tailwind CSS` |
