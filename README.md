@@ -51,7 +51,7 @@
 
 |     | Title                                                                                                                        |                                                    | Technologies    |
 | :-- | :--------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------- | :-------------- |
-| `1` | **[Firefox-New-Tab-Page (Clone)](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/Firefox-New-Tab-Page)** | [Codepen](https://codepen.io/emr3rden/pen/KKQYZKz) | `HTML-CSS-SCSS` |
+| `1` | **[Firefox-New-Tab-Page (Clone)](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/Firefox-New-Tab-Page)** | [Vercel](https://firefox-new-tab-page.vercel.app/) | `HTML-CSS-SCSS` |
 | `2` | **[Spotify-Website (Clone)](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/Spotify-Website)**           | [Vercel](https://spotify-website.vercel.app/)      | `HTML-CSS-SCSS` |
 
 |     | Title                                                                                                                |                                                    | Technologies        |
