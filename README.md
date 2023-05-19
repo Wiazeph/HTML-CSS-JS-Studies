@@ -1,8 +1,10 @@
 <p align="center">
-    <img src="https://skillicons.dev/icons?i=html,css,js"/>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=html,css,sass,tailwind" />
+  </a>
 </p>
 
-<p align="center">Here you can find my works where I applied what I learned about HTML, CSS and JS.</p>
+<p align="center">Here you can find my works where I applied what I learned about HTML, CSS, SCSS and Tailwind CSS.</p>
 
 <hr/>
 
@@ -66,10 +68,10 @@
 
 <hr/>
 
-<h4>My accounts on social networks:</h4>
+<h4>My accounts on networks:</h4>
 
+- Website: <a href="https://emreerden.dev/">emreerden.dev</a>
+- LinkedIn: <a href="https://www.linkedin.com/in/emr3rden/">@emr3rden</a>
+- Codepen: <a href="https://codepen.io/emr3rden">@emr3rden</a>
 - Twitter: <a href="https://twitter.com/emr3rden">@emr3rden</a>
 - Instagram: <a href="https://www.instagram.com/emr3rden/">@emr3rden</a>
-- Codepen: <a href="https://codepen.io/emr3rden">@emr3rden</a>
-- LinkedIn: <a href="https://www.linkedin.com/in/emr3rden/">@emr3rden</a>
-- Website: <a href="https://emr3rden.github.io/">emr3rden.github.io</a>
