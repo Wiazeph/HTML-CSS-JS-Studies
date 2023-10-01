@@ -1,10 +1,18 @@
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,sass,tailwind" />
+    <img src="https://skillicons.dev/icons?i=html,css,sass,tailwind,js" />
   </a>
 </p>
 
-<p align="center">Here you can find my works where I applied what I learned about HTML, CSS, SCSS and Tailwind CSS.</p>
+<p align="center">Here you can find my works where I applied what I learned about HTML, CSS, SCSS, Tailwind CSS and JavaScript.</p>
+
+<br>
+
+<p align="center">
+If you like this repository, you can follow my accounts and support it by giving a star ⭐
+<br><br>
+<a href="https://www.linkedin.com/in/Wiazeph/">LinkedIn</a> - <a href="https://twitter.com/Wiazeph">Twitter</a> - <a href="https://www.instagram.com/Wiazeph/">Instagram</a> - <a href="https://codepen.io/Wiazeph">Codepen</a>
+</p>
 
 <hr/>
 
@@ -35,8 +43,7 @@
 | `13` | **[sticky-header](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/sticky-header)**                                 | [Codepen](https://codepen.io/emr3rden/pen/zYRQOaV) | `HTML-CSS-SCSS` |
 | `14` | **[resizeable-container](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/resizeable-container)**                   | [Codepen](https://codepen.io/emr3rden/pen/abYzvya) | `HTML-CSS-SCSS` |
 | `15` | **[text-rotating](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/text-rotating)**                                 | [Codepen](https://codepen.io/emr3rden/pen/oNEbJzZ) | `HTML-CSS`      |
-| `16` | **[menu-items-list](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/menu-items-list)**                             | [Codepen](https://codepen.io/emr3rden/pen/MWQapmK) | `HTML-CSS-SCSS` |
-| `17` | **[easy-way-to-saparator](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/easy-way-to-separator)**                 | [Codepen](https://codepen.io/emr3rden/pen/eYVoymW) | `HTML-CSS`      |
+| `16` | **[easy-way-to-saparator](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/easy-way-to-separator)**                 | [Codepen](https://codepen.io/emr3rden/pen/eYVoymW) | `HTML-CSS`      |
 
 <hr/>
 
@@ -67,11 +74,3 @@
 | `7` | **[faq-section-1](https://github.com/emr3rden/HTML-CSS-JS-Studies/tree/master/Studies/faq-section-1)**               | [Codepen](https://codepen.io/emr3rden/pen/LYrLawj) | `HTML-Tailwind CSS` |
 
 <hr/>
-
-<h4>My accounts on networks:</h4>
-
-- Website: <a href="https://emreerden.dev/">emreerden.dev</a>
-- LinkedIn: <a href="https://www.linkedin.com/in/emr3rden/">@emr3rden</a>
-- Codepen: <a href="https://codepen.io/emr3rden">@emr3rden</a>
-- Twitter: <a href="https://twitter.com/emr3rden">@emr3rden</a>
-- Instagram: <a href="https://www.instagram.com/emr3rden/">@emr3rden</a>
