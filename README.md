@@ -45,6 +45,10 @@ If you like this repository, you can follow my accounts and support it by giving
 | `15` | **[text-rotating](https://github.com/Wiazeph/HTML-CSS-JS-Studies/tree/master/Studies/text-rotating)**                                 | [Codepen](https://codepen.io/Wiazeph/pen/oNEbJzZ) | `HTML-CSS`      |
 | `16` | **[easy-way-to-saparator](https://github.com/Wiazeph/HTML-CSS-JS-Studies/tree/master/Studies/easy-way-to-separator)**                 | [Codepen](https://codepen.io/Wiazeph/pen/eYVoymW) | `HTML-CSS`      |
 
+|      | Title                                                                                                                                  |                                                    | Technologies    |
+| :--- | :------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------- | :-------------- |
+| `1`  | **[scroll-to-top](https://github.com/Wiazeph/HTML-CSS-JS-Studies/tree/master/Studies/scroll-to-top)**             | [Codepen](https://codepen.io/Wiazeph/pen/MWQeeRq) | `HTML-CSS-JavaScript`      |
+
 <hr/>
 
 |     | Title                                                                                                                    |                                                    | Technologies    |
