@@ -48,6 +48,7 @@ If you like this repository, you can follow my accounts and support it by giving
 |      | Title                                                                                                                                  |                                                    | Technologies    |
 | :--- | :------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------- | :-------------- |
 | `1`  | **[scroll-to-top](https://github.com/Wiazeph/HTML-CSS-JS-Studies/tree/master/Studies/scroll-to-top)**             | [Codepen](https://codepen.io/Wiazeph/pen/MWQeeRq) | `HTML-CSS-JavaScript`      |
+| `2`  | **[remove-to-add-class](https://github.com/Wiazeph/HTML-CSS-JS-Studies/tree/master/Studies/remove-to-add-class)** | [Codepen](https://codepen.io/Wiazeph/pen/gOjgqjV) | `HTML-CSS-JavaScript`      |
 
 <hr/>
 
