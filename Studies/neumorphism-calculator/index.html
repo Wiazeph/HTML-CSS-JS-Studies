@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Neumorphism Calculator</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <!--Custom CSS-->
+
+    <!--Tailwind CSS-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style type="text/tailwindcss">
+      @layer components {
+        .buttons {
+          @apply rounded-2xl bg-[#2a2c3c] shadow-[3px_3px_6px_rgb(36,37,51),-3px_-3px_6px_rgb(48,51,69)] active:shadow-[inset_3px_3px_6px_rgb(36,37,51),inset_-3px_-3px_6px_rgb(48,51,69)] flex items-center justify-center hover:cursor-pointer;
+        }
+      }
+
+      @layer utilities {
+        .no-scrollbar {
+          /* Hide scrollbar for IE, Edge and Firefox */
+          -ms-overflow-style: none; /* IE and Edge */
+          scrollbar-width: none; /* Firefox */
+        }
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    </style>
+    <!--Tailwind CSS-->
+  </head>
+
+  <body>
+    <div
+      id="calculator"
+      class="relative h-[550px] w-[350px] overflow-hidden rounded-2xl bg-[#2a2c3c] px-6 pb-6 shadow-[20px_20px_60px_rgb(34,36,49),-20px_-20px_60px_rgb(50,52,71)]"
+    >
+      <div
+        id="result"
+        class="no-scrollbar my-6 w-full overflow-x-auto rounded-2xl bg-[#2a2c3c] py-7 px-3 text-right text-4xl shadow-[inset_3px_3px_6px_rgb(36,37,51),inset_-3px_-3px_6px_rgb(48,51,69)]"
+      >
+        0
+      </div>
+
+      <div
+        class="grid h-[calc(100%-144px)] w-full select-none grid-cols-4 gap-4"
+      >
+        <button class="buttons">CE</button>
+        <button class="buttons">C</button>
+        <button class="buttons text-sm">Delete</button>
+        <button class="buttons">/</button>
+        <button class="buttons">7</button>
+        <button class="buttons">8</button>
+        <button class="buttons">9</button>
+        <button class="buttons">*</button>
+        <button class="buttons">4</button>
+        <button class="buttons">5</button>
+        <button class="buttons">6</button>
+        <button class="buttons">-</button>
+        <button class="buttons">1</button>
+        <button class="buttons">2</button>
+        <button class="buttons">3</button>
+        <button class="buttons">+</button>
+        <button class="buttons col-span-2">0</button>
+        <button class="buttons text-2xl">,</button>
+        <button class="buttons">=</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

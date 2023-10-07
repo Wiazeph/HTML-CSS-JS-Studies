@@ -78,4 +78,9 @@ If you like this repository, you can follow my accounts and support it by giving
 | `6` | **[team-section-1](https://github.com/Wiazeph/HTML-CSS-JS-Studies/tree/master/Studies/team-section-1)**             | [Codepen](https://codepen.io/Wiazeph/pen/NWMxmOz) | `HTML-Tailwind CSS` |
 | `7` | **[faq-section-1](https://github.com/Wiazeph/HTML-CSS-JS-Studies/tree/master/Studies/faq-section-1)**               | [Codepen](https://codepen.io/Wiazeph/pen/LYrLawj) | `HTML-Tailwind CSS` |
 
+|      | Title                                                                                                                                  |                                                    | Technologies    |
+| :--- | :------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------- | :-------------- |
+| `1`  | **[neumorphism-calculator](https://github.com/Wiazeph/HTML-CSS-JS-Studies/tree/master/Studies/neumorphism-calculator)**             | [Codepen](https://codepen.io/Wiazeph/pen/OJrrmXw) | `HTML-Tailwind CSS-JavaScript`      |
+| `2`  | **[password-strength-checker](https://github.com/Wiazeph/HTML-CSS-JS-Studies/tree/master/Studies/password-strength-checker)** | [Codepen](https://codepen.io/Wiazeph/pen/QWzzvEo) | `HTML-Tailwind CSS-JavaScript`      |
+
 <hr/>
