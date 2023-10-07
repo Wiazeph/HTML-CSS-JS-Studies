@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Password Strength Checker</title>
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <!--Custom CSS-->
+
+    <!--Tailwind CSS-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Tailwind CSS-->
+  </head>
+
+  <body>
+    <div
+      class="flex w-[400px] flex-col gap-7 rounded-lg bg-[#2a2c3c] p-14 shadow-[20px_20px_60px_rgb(133,66,188),-20px_-20px_60px_rgb(181,90,254)]"
+    >
+      <div class="mb-7 text-center text-3xl font-bold">
+        Password Strength Checker
+      </div>
+      <div id="strength" class="text-center text-lg"></div>
+      <input
+        type="password"
+        placeholder="Please enter your password"
+        id="password"
+        class="h-14 w-full rounded-lg bg-[#2a2c3c] px-5 text-lg shadow-[inset_3px_3px_6px_rgb(24,26,35),inset_-3px_-3px_6px_rgb(60,62,85)] outline-none placeholder:text-sm placeholder:font-medium placeholder:italic"
+      />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
